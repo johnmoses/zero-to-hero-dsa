@@ -1,69 +1,140 @@
 """ 
 Hashes
 
-Write a basic implementation of hash map with a hash function.
-Give step by step explanations.
+Design a hash map with ability to insert, access and delete items.
+
+Example 1:
+    Input
+    ["HashMap", "insert", "insert", "get", "get", "insert", "get", "delete", "get"]
+    [[], [1, 1], [2, 2], [1], [3], [2, 1], [2], [2], [2]]
+    Output
+    [null, null, null, 1, -1, null, 1, null, -1]
+
+Constraints:
+0 <= key, value <= 106
+At most 104 calls will be made to put, get, and remove.
 """
 class HashMap:
-    def __init__(self, capacity):
-        self.capacity = capacity
-        self.table = [None] * capacity
-        self.size = 0
+    def __init__(self):
+        # Initialize fixed size array with None values
+        self.size = 100
+        self.table = [[] for _ in range(self.size)]
 
-    def hash_function(self, key):
-        """
-        A simple hash function that uses the built-in hash() function and modulo operator.
-        """
-        return hash(key) % self.capacity
+    
+    def _hash(self, key):
+        # Simple hash function that maps key to index
+        return key % self.size
 
+        
     def insert(self, key, value):
-        """
-        Inserts a key-value pair into the hash map.
-        Handles collisions using separate chaining.
-        """
-        index = self.hash_function(key)
-        if self.table[index] is None:
-            self.table[index] = [(key, value)]
-        else:
-            self.table[index].append((key, value))
-        self.size += 1
+        # Get hash of key
+        index = self._hash(key)
+        
+        # Check if key exists and update value
+        for item in self.table[index]:
+            if item[0] == key:
+                item[1] = value
+                return
+                
+        # Insert new key-value pair
+                
+        self.table[index].append([key, value])
 
+        
     def get(self, key):
-        """
-        Retrieves the value associated with the given key.
-        Returns None if the key is not found.
-        """
-        index = self.hash_function(key)
-        if self.table[index] is not None:
-            for k, v in self.table[index]:
-                if k == key:
-                    return v
-        return None
+        # Get hash of key
+        index = self._hash(key)
+        
+        # Return value if key found, else -1
+        for item in self.table[index]:
+            if item[0] == key:
+                return item[1]
+        return -1
+        
+    def delete(self, key):
+        # Get hash of key 
+        index = self._hash(key)
+        
+        # Remove item if key found
+        for i, item in enumerate(self.table[index]):
+            if item[0] == key:
+                self.table[index].pop(i)
+                return
+                # del self.table[index][i]
+                # return
+                
+    def print_table(self):
+        print(self.table)
+
+hash_map = HashMap()
+hash_map.insert(1, 1)
+hash_map.insert(2, 2)
+print(hash_map.get(1))  # Output: 1
+print(hash_map.get(3))  # Output: -1
+hash_map.insert(2, 1)
+print(hash_map.get(2))  # Output: 1
+hash_map.delete(2)
+hash_map.insert(3, 3)
+print(hash_map.get(2))  # Output: -1
+hash_map.print_table()
+
+""" 
+Design a hash set with insert, contains and delete behaviours.
+
+Example 1:
+    ["HashSet", "insert", "insert", "contains", "contains", "insert", "contains", "delete", "contains"]
+    [[], [1], [2], [1], [3], [2], [2], [2], [2]]
+    Output
+    [null, null, null, true, false, nul
+
+Constraints:
+0 <= key <= 106
+At most 104 calls will be made to insert, delete, and contains.
+"""
+class HashSet:
+    def __init__(self):
+        self.size = 100
+        self.table = [[] for _ in range(self.size)]
+
+    def _hash(self, key):
+        return key % self.size
+
+    def insert(self, key):
+        index = self._hash(key)
+        if key not in self.table[index]:
+            self.table[index].append(key)
+
+    def contains(self, key):
+        index = self._hash(key)
+        return key in self.table[index]
 
     def delete(self, key):
-        """
-        Deletes the key-value pair associated with the given key.
-        Returns True if the key was found and deleted, False otherwise.
-        """
-        index = self.hash_function(key)
-        if self.table[index] is not None:
-            for i, (k, v) in enumerate(self.table[index]):
-                if k == key:
-                    del self.table[index][i]
-                    self.size -= 1
-                    return True
-        return False
+        index = self._hash(key)
+        if key in self.table[index]:
+            self.table[index].remove(key)
 
-    def __len__(self):
-        """
-        Returns the number of key-value pairs in the hash map.
-        """
-        return self.size
+    def print_table(self):
+        print(self.table)
+        for i in range(len(self.table)):
+            print(f"Index {i}: {self.table[i]}")
+            for j in range(len(self.table[i])):
+                print(f"  Item {j}: {self.table[i][j]}")
+                print(f"    Hash: {self._hash(self.table[i][j])}")
+                print(f"    Index: {self._hash(self.table[i][j]) % self.size}")
+                print(f"    Key: {self.table[i][j]}")
+                print(f"    Value: {self.table[i][j]}")
+                print(f"    Hash: {self._hash(self.table[i][j])}")
+                print(f"    Index: {self._hash(self.table[i][j]) % self.size}")
 
-    def __str__(self):
-        return str(self.table)
-
-hmap = HashMap(2)
-hmap.insert(1,'A')
-hmap.insert(2,'B')
-print(hmap)
+hash_set = HashSet()
+hash_set.insert(1)
+hash_set.insert(2)
+print(hash_set.contains(1))
+print(hash_set.contains(3))
+hash_set.insert(2)
+print(hash_set.contains(2))
+hash_set.delete(2)
+hash_set.print_table()
+hash_set.insert(3)
+print(hash_set.contains(2))
+hash_set.print_table()

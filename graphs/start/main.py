@@ -1,6 +1,14 @@
 """ 
-Graph Representations
-Adjacency matrix is a good starting point for creating graph representations
+Graph Representation
+
+ Given the nodes ['A', 'B', 'C', 'D', 'E'] and 
+ edges edges = [
+    [0, 1, 1, 1, 0],  # Edges for A
+    [1, 0, 1, 0, 0],  # Edges for B
+    [1, 1, 0, 0, 0],  # Edges for C
+    [1, 0, 0, 0, 0],  # Edges for D
+    [0, 1, 0, 0, 1]   # Edges for E
+], Write a basic adjacency matrix graph representation in Python.
 """
 
 nodes = ['A', 'B', 'C', 'D', 'E'] # Vertex or node data
@@ -31,11 +39,3 @@ def print_connections(edges, nodes):
 print('Nodes:',nodes)
 print_edges(edges)
 print_connections(edges, nodes)
-
-# print('Graph')
-# for i in range(len(nodes)):
-#     print(f'{nodes[i]}: ', end='')
-#     for j in range(len(nodes)):
-#         if edges[i][j]:
-#             print(nodes[j], end=' ')
-#     print()

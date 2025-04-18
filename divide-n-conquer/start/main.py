@@ -1,33 +1,33 @@
 """
-Write a basic divide and conquer algorithm to recursively summ elements in an array
+Given a set of numbers, write a divide and conquer algorithm to sort the numbers.
 
-Sample 1:
-    Input: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    Output: 55
-    Explanation: The sum of the array is 55.
+Example 1:
+    Input: [3, 7, 6, -10, 15, 23.5, 55, -13]
+    Output: [-13, -10, 3, 6, 7, 15, 23.5, 55]
 """
+def merge(left, right):
+    result = []
+    i, j = 0, 0
+    while i < len(left) and j < len(right):
+        if left[i] <= right[j]:
+            result.append(left[i])
+            i += 1
+        else:
+            result.append(right[j])
+            j += 1
+    result.extend(left[i:])
+    result.extend(right[j:])
+    return result
 
-def divide_and_conquer(arr):
-    """
-    Basic divide and conquer algorithm example.
-    This function demonstrates the concept by recursively summing the elements of an array.
-
-    Args:
-        arr: The input array of numbers.
-
-    Returns:
-        The sum of the elements in the array.
-    """
-    if len(arr) == 0:
-        return 0
-    if len(arr) == 1:
-        return arr[0]
-
+def merge_sort(arr):
+    # Base case - array of size 1 or less is already sorted
+    if len(arr) <= 1:
+        return arr
+        
     mid = len(arr) // 2
-    left_sum = divide_and_conquer(arr[:mid])
-    right_sum = divide_and_conquer(arr[mid:])
+    left = merge_sort(arr[:mid])
+    right = merge_sort(arr[mid:])
+    
+    return merge(left, right)
 
-    return left_sum + right_sum
-
-result = divide_and_conquer([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
-print(f"The sum of the array is: {result}")
+print(merge_sort([3, 7, 6, -10, 15, 23.5, 55, -13]))
