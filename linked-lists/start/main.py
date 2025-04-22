@@ -4,8 +4,8 @@ Singly Linked Lists
 Given some nodes, 20, 30, 40, write a basic linked list to link the nodes, traverse and display the nodes in order.
 """
 class Node:
-    def __init__(self, data):
-        self.data = data
+    def __init__(self, value):
+        self.value = value
         self.next = None
 
 # Instantiate Node
@@ -23,7 +23,7 @@ b.next = c
 # Set first node as current
 current = a
 while current:
-    print(current.data, end=' -> ')
+    print(current.value, end=' -> ')
     current = current.next
 print()
 
@@ -32,7 +32,7 @@ print()
 current = a
 nodes = ""
 while current:
-    nodes += (str(current.data) + ' -> ')
+    nodes += (str(current.value) + ' -> ')
     current = current.next
 print(nodes)
 
@@ -41,7 +41,7 @@ print(nodes)
 current = a
 nodes = []
 while current:
-    nodes.append(current.data)
+    nodes.append(current.value)
     current = current.next
 values = [str(i) + ' -> ' for i in nodes]
 print(values)

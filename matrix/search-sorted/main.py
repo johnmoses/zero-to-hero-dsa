@@ -1,46 +1,40 @@
-""" 
-Search a matrix for a given value
-arr = [
-    [0, 6, 8, 9, 11],
-    [20, 22, 28, 29, 31],
-    [36, 38, 50, 61, 63],
-    [64, 66, 100, 122, 128]
-]
-x = 8
 """
-def search1(arr, x):
-    if not arr:
-        return None
-    row = 0
-    col = len(arr[0]) - 1
-    while row < len(arr) and col >= 0:
-        if arr[row][col] == x:
-            return (row, col)
-        elif arr[row][col] > x:
-            col -= 1
+Search sorted two-dimensional matrix given dimensions m, n and target key k.
+
+mat = [[2, 5, 7], [4, 8, 13], [9, 11, 15], [12, 17, 20]]
+"""
+def searchSorted1(mat, m, n, k):
+    # Perform binary search on 2D matrix
+    if not mat or not mat[0]:
+        return False
+        
+    left, right = 0, m * n - 1
+    while left <= right:
+        mid = (left + right) // 2
+        row, col = mid // n, mid % n
+        
+        if mat[row][col] == k:
+            return True
+        elif mat[row][col] < k:
+            left = mid + 1 
         else:
-            row += 1
-    return None
-
-def search2(arr, x):
-    rows, cols = len(arr), len(arr[0])
-
-    # Traverse each row and column
-    for i in range(rows):
-        for j in range(cols):
-            if arr[i][j] == x:
-                return True
+            right = mid - 1
     return False
 
-print(search1([
-    [0, 6, 8, 9, 11],
-    [20, 22, 28, 29, 31],
-    [36, 38, 50, 61, 63],
-    [64, 66, 100, 122, 128]
-], 8))
-print(search2([
-    [0, 6, 8, 9, 11],
-    [20, 22, 28, 29, 31],
-    [36, 38, 50, 61, 63],
-    [64, 66, 100, 122, 128]
-], 8))
+def searchSorted2(mat: list[list], m: int, n: int, key: int | float) -> None:
+    """
+    Search a sorted matrix
+    """
+    i, j = m-1, 0
+    while i >= 0 and j < n:
+        if key == mat[i][j]:
+            print(f"key {key} found at row- {i+1} column- {j+1}")
+            return
+        if key < mat[i][j]:
+             i -= 1
+        else:
+            j += 1
+    print(f"key {key} not found")
+
+print(searchSorted1([[2, 5, 7], [4, 8, 13], [9, 11, 15], [12, 17, 20]], 2, 2, 2))
+print(searchSorted2([[2, 5, 7], [4, 8, 13], [9, 11, 15], [12, 17, 20]], 2, 2, 2))

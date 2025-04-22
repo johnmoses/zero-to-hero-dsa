@@ -1,1 +1,1 @@
-# Tree data structure
+# Binary Seercj Tree data structure

@@ -10,8 +10,8 @@ Given some nodes with values 20, 30, 40, design a fully functional singly linked
     - traverse and display nodes
 """
 class Node:
-    def __init__(self, data):
-        self.data = data
+    def __init__(self, value):
+        self.value = value
         self.next = None
 
 class LinkedList:
@@ -26,17 +26,17 @@ class LinkedList:
             if current is None:
                 return None
             current = current.next
-        return current.data if current else None
+        return current.value if current else None
 
         
-    def add_head(self, data):
-        new_node = Node(data)
+    def add_head(self, value):
+        new_node = Node(value)
         new_node.next = self.head
         self.head = new_node
 
         
-    def add_tail(self, data):
-        new_node = Node(data)
+    def add_tail(self, value):
+        new_node = Node(value)
         if self.head is None:
             self.head = new_node
             return
@@ -46,11 +46,11 @@ class LinkedList:
         current.next = new_node
 
 
-    def add_at_index(self, data, index):
+    def add_at_index(self, value, index):
         if index == 0:
-            self.add_head(data)
+            self.add_head(value)
             return
-        new_node = Node(data)
+        new_node = Node(value)
         current = self.head
         for i in range(index-1):
             if current is None:
@@ -82,13 +82,13 @@ class LinkedList:
     def display(self):
         current = self.head
         while current:
-            print(current.data, end=" -> ")
+            print(current.value, end=" -> ")
             current = current.next
         print("None")
         print("")
 
     def __str__(self):
-        values = [str(x.data) for x in self]
+        values = [str(x.value) for x in self]
         return ' -> '.join(values)
 
 ll = LinkedList()

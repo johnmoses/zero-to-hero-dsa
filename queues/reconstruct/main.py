@@ -3,8 +3,8 @@ Linked list implementation
 """
 
 class Node:
-    def __init__(self, data):
-        self.data = data
+    def __init__(self, value):
+        self.value = value
         self.next = None
 
 class Queue:
@@ -25,7 +25,7 @@ class Queue:
     def peek(self):
         if self.isEmpty():
             return "Queue is empty"
-        return self.front.data
+        return self.front.value
     
     # Insert an item or value
     def enqueue(self, val):
@@ -47,13 +47,13 @@ class Queue:
         self.length -= 1
         if self.front is None:
             self.rear = None
-        return node.data
+        return node.value
 
     # Print queue
     def printQueue(self):
         node = self.front
         while node:
-            print(node.data, end=" ")
+            print(node.value, end=" ")
             node = node.next
         print()
 

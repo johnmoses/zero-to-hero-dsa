@@ -6,19 +6,19 @@ from random import randint
 
 class Bag:
     def __init__(self):
-        self.bag = deque()
+        self.values = deque()
 
-    def add(self, item):
-        self.bag.append(item)
+    def add(self, value):
+        self.values.append(value)
 
     def isEmpty(self):
-        return len(self.bag) == 0
+        return len(self.values) == 0
 
     def size(self):
-        return len(self.bag)
+        return len(self.values)
 
     def __str__(self):
-        return f"{self.bag}"
+        return f"{self.values}"
 
 bag = Bag()
 for i in range(10):

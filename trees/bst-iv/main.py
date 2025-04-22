@@ -4,34 +4,37 @@ Binary Tree from dictionary
 dct = [15, 10, 8, 12, 20, 16, 25] 
 
 class Node:
-    def __init__(self, data, left= None, right = None):
-        self.data = data
+    def __init__(self, values, left= None, right = None):
+        self.values = values
         self.left = left
         self.right = right
 
-def build_tree(data):
+    def __str__(self):
+        return str(self.values)
+
+def build_tree(values):
     
-    # Check if we have data; if we don't then return None
-    if not data:
+    # Check if we have values; if we don't then return None
+    if not values:
         return None
 
     # Create our tree object from the root and then
-    # add it to a list of nodes that we can add data to
-    tree = Node(data[0])
-    queue = [data[0]]    
+    # add it to a list of nodes that we can add values to
+    tree = Node(values[0])
+    queue = [values[0]]    
 
     # Iterate over the rest of the nodes and add
     # them to the tree
     index = 0
-    for i in range(1, len(data) - 1):
+    for i in range(1, len(values) - 1):
 
         # If our node is None then we have a leaf so
         # there's no work to do; otherwise, create the
         # node and add it to the proper spot
-        if data[i] is not None:
+        if values[i] is not None:
 
             # Create the node from the data
-            node = Node(data[i])
+            node = Node(values[i])
 
             # If the index we're looking at is even
             # then we have a left branch; otherwise we

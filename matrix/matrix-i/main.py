@@ -5,16 +5,16 @@ class Matrix:
     def __init__(self, rows, cols):
         self.rows = rows
         self.cols = cols
-        self.data = [[0] * cols for _ in range(rows)]
+        self.values = [[0] * cols for _ in range(rows)]
 
     def get(self, row, col):
-        return self.data[row][col]
+        return self.values[row][col]
 
     def set(self, row, col, value):
-        self.data[row][col] = value
+        self.values[row][col] = value
 
     def display(self):
-        for row in self.data:
+        for row in self.values:
             print(row)
 
 matrix = Matrix(3, 3)

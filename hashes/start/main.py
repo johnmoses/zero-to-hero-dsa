@@ -1,140 +1,73 @@
 """ 
-Hashes
-
-Design a hash map with ability to insert, access and delete items.
-
-Example 1:
-    Input
-    ["HashMap", "insert", "insert", "get", "get", "insert", "get", "delete", "get"]
-    [[], [1, 1], [2, 2], [1], [3], [2, 1], [2], [2], [2]]
-    Output
-    [null, null, null, 1, -1, null, 1, null, -1]
-
-Constraints:
-0 <= key, value <= 106
-At most 104 calls will be made to put, get, and remove.
+Create a basic hash table to store adn access fruits based on their first letters.
 """
-class HashMap:
-    def __init__(self):
-        # Initialize fixed size array with None values
-        self.size = 100
-        self.table = [[] for _ in range(self.size)]
+# Create an empty map or dictionary
+m = {}
 
-    
-    def _hash(self, key):
-        # Simple hash function that maps key to index
-        return key % self.size
+# Add key-value pairs to the map
+m["a"] = "apple"
+m["b"] = "banana"
+m["c"] = "cherry"
 
-        
-    def insert(self, key, value):
-        # Get hash of key
-        index = self._hash(key)
-        
-        # Check if key exists and update value
-        for item in self.table[index]:
-            if item[0] == key:
-                item[1] = value
-                return
-                
-        # Insert new key-value pair
-                
-        self.table[index].append([key, value])
+# Print the map
+print(m)  # Output: {'a': 'apple', 'b': 'banana', 'c': 'cherry'}
+print(m["a"])  # Output: apple
 
-        
-    def get(self, key):
-        # Get hash of key
-        index = self._hash(key)
-        
-        # Return value if key found, else -1
-        for item in self.table[index]:
-            if item[0] == key:
-                return item[1]
-        return -1
-        
-    def delete(self, key):
-        # Get hash of key 
-        index = self._hash(key)
-        
-        # Remove item if key found
-        for i, item in enumerate(self.table[index]):
-            if item[0] == key:
-                self.table[index].pop(i)
-                return
-                # del self.table[index][i]
-                # return
-                
-    def print_table(self):
-        print(self.table)
+# Check if a key exists in the map
+print("a" in m)  # Output: True
 
-hash_map = HashMap()
-hash_map.insert(1, 1)
-hash_map.insert(2, 2)
-print(hash_map.get(1))  # Output: 1
-print(hash_map.get(3))  # Output: -1
-hash_map.insert(2, 1)
-print(hash_map.get(2))  # Output: 1
-hash_map.delete(2)
-hash_map.insert(3, 3)
-print(hash_map.get(2))  # Output: -1
-hash_map.print_table()
+# Remove a key-value pair from the map
+del m["a"]
+print(m)  # Output: {'b': 'banana', 'c': 'cherry'}
+print("a" in m)  # Output: False
+print("b" in m)  # Output: True
 
-""" 
-Design a hash set with insert, contains and delete behaviours.
+# Iterate over the map
+for key, value in m.items():
+    print(key, value)
 
-Example 1:
-    ["HashSet", "insert", "insert", "contains", "contains", "insert", "contains", "delete", "contains"]
-    [[], [1], [2], [1], [3], [2], [2], [2], [2]]
-    Output
-    [null, null, null, true, false, nul
+# Output:
+    # ('b', 'banana')
+# ('c', 'cherry')
 
-Constraints:
-0 <= key <= 106
-At most 104 calls will be made to insert, delete, and contains.
-"""
-class HashSet:
-    def __init__(self):
-        self.size = 100
-        self.table = [[] for _ in range(self.size)]
+# Iterate over the keys in the map
+for key in m.keys():
+    print(key)
 
-    def _hash(self, key):
-        return key % self.size
+# Output:
+    # b
+    # c
 
-    def insert(self, key):
-        index = self._hash(key)
-        if key not in self.table[index]:
-            self.table[index].append(key)
+# Iterate over the values in the map
+for value in m.values():
+    print(value)
+    # Output:
+    # banana
+    # cherry
 
-    def contains(self, key):
-        index = self._hash(key)
-        return key in self.table[index]
+# Iterate over the keys in the map using a list comprehension
+for key in [k for k in m.keys()]:
+    print(key)
+    # Output:
+    # b
+    # c
 
-    def delete(self, key):
-        index = self._hash(key)
-        if key in self.table[index]:
-            self.table[index].remove(key)
+# Iterate over the values in the map using a list comprehension
+for value in [v for v in m.values()]:
+    print(value)
+    # Output:
+    # banana
+    # cherry
 
-    def print_table(self):
-        print(self.table)
-        for i in range(len(self.table)):
-            print(f"Index {i}: {self.table[i]}")
-            for j in range(len(self.table[i])):
-                print(f"  Item {j}: {self.table[i][j]}")
-                print(f"    Hash: {self._hash(self.table[i][j])}")
-                print(f"    Index: {self._hash(self.table[i][j]) % self.size}")
-                print(f"    Key: {self.table[i][j]}")
-                print(f"    Value: {self.table[i][j]}")
-                print(f"    Hash: {self._hash(self.table[i][j])}")
-                print(f"    Index: {self._hash(self.table[i][j]) % self.size}")
+# Iterate over the keys in the map using a list comprehension and sorted
+for key in sorted([k for k in m.keys()]):
+    print(key)
+    # Output:
+    # b
+    # c
 
-hash_set = HashSet()
-hash_set.insert(1)
-hash_set.insert(2)
-print(hash_set.contains(1))
-print(hash_set.contains(3))
-hash_set.insert(2)
-print(hash_set.contains(2))
-hash_set.delete(2)
-hash_set.print_table()
-hash_set.insert(3)
-print(hash_set.contains(2))
-hash_set.print_table()
+# Iterate over the values in the map using a list comprehension and sorted
+for value in sorted([v for v in m.values()]):
+    print(value)
+    # Output:
+    # banana

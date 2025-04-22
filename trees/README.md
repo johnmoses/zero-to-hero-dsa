@@ -35,6 +35,13 @@ A typical implementation of a tree is binary trees that use linked structures
 
 ## Binary Search Tree
 
+A binary search tree (BST), a special form of a binary tree, satisfies the binary search property:
+
+- The value in each node must be greater than (or equal to) any values stored in its left subtree.
+- The value in each node must be less than (or equal to) any values stored in its right subtree.
+
+One of the biggest advantages of Binary Search Trees is that operations like search, delete, and insert are fast and done without having to shift values in memory.
+
 A binary tree can be traversed in preorder, inorder, postorder or level-order. Among these traversal methods, preorder, postorder and level-order traversal are suitable to be extended to an N-ary tree.
 
 ## AVL Tree

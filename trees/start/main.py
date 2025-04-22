@@ -1,12 +1,12 @@
 """
-Binary Trees
+Binary Search Trees
 
 Given some items, A, B, C, and so on, write a basic binary tree to demonstrate it's core functionalities
 """
 
 class Node:
-    def __init__(self, data):
-        self.data = data
+    def __init__(self, value):
+        self.value = value
         self.left = None
         self.right = None
 
@@ -28,7 +28,7 @@ c.left = f
 c.right = g
 
 # Test
-print("a.right.left.data:", a.right.left.data)
+print("a.right.left.value:", a.right.left.value)
 
 # Traverse
 print('Traverse 1:')
@@ -40,7 +40,7 @@ while root or nodes:
         nodes.append(root)
         root = root.left
     root = nodes.pop()
-    tree.append(root.data)
+    tree.append(root.value)
     root = root.right
 values = [str(i) + '->' for i in tree]
 print(values)
@@ -50,7 +50,7 @@ print('Traverse 2:')
 def traverse(root):
     if root is None:
         return
-    print(root.data, end=" -> ")
+    print(root.value, end=" -> ")
     traverse(root.left)
     traverse(root.right)
 

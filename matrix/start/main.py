@@ -12,8 +12,8 @@ transpose = [[row[i] for row in matrix] for i in range(3)]
 print('Transpose: ', transpose)
 
 # Multiplication
-result = [[sum(a * b for a, b in zip(row, col)) for col in zip(*matrix)] for row in matrix]
-print('Multiplication: ', result)
+multiply = [[sum(a * b for a, b in zip(row, col)) for col in zip(*matrix)] for row in matrix]
+print('Multiplication: ', multiply)
 
 # Determinant
 determinant = sum(a * b * c for a, b, c in zip(matrix[0], matrix[1], matrix[2]))

@@ -1,20 +1,20 @@
-"""
-Basic binary tree with pre-order, in-order and post-order traversals
+""" 
+Binary Search Tree (BST) Example
 """
 
 class Node:
-    def __init__(self, data):
-        self.data = data
+    def __init__(self, value):
+        self.value = value
         self.left = None
         self.right = None
 
     def __str__(self):
-        return str(self.data)
+        return str(self.value)
 
 class Tree:
     def __init__(self, root):
         self.root = root
-
+        
     def pre_order(self, node):
         if node:
             print(node, end=" ")
@@ -32,6 +32,17 @@ class Tree:
             self.post_order(node.left)
             self.post_order(node.right)
             print(node, end=" ")
+
+    def search(self, node, target):
+        if node is None:
+            return None 
+        elif node.value == target:
+            return node
+        elif target < node.value:
+            return self.search(node.left, target)
+        else:
+            return self.search(node.right, target)
+
 
 a = Node("A")   # Root
 b = Node("B")
@@ -63,3 +74,6 @@ print("\n")
 
 print("Postorder Traversal")
 tree.post_order(a)
+print('\n ')
+
+print('Search: ', tree.search(a, "G"))

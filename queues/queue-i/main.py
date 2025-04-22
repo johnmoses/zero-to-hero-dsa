@@ -7,37 +7,37 @@ class Queue:
     Initialize a queue and add some behavious
     """
     def __init__(self):
-        self.data = []
+        self.values = []
 
     def __len__(self):
-        return len(self.data)
+        return len(self.values)
     
     # Get size
     def getSize(self):
-        return len(self.data)
+        return len(self.values)
     
     # Check if empty
     def isEmpty(self):
-        return len(self.data) == 0
+        return len(self.values) == 0
     
     # Get front or peek item
     def peek(self):
         if self.isEmpty():
             return "Queue is empty"
-        return self.data[0]
+        return self.values[0]
     
     # Insert an item
     def enqueue(self, val):
-        self.data.append(val)
+        self.values.append(val)
     
     # Remove an item
     def dequeue(self):
         if self.isEmpty():
             return "Queue is empty"
-        return self.data.pop(0)
+        return self.values.pop(0)
 
     def __str__(self):
-        return str(self.data)
+        return str(self.values)
 
 
 q = Queue()
@@ -45,7 +45,7 @@ q = Queue()
 q.enqueue('A')
 q.enqueue('B')
 q.enqueue('C')
-print("Queue: ", q.data)
+print("Queue: ", q.values)
 print("Size: ", q.getSize())
 print("Dequeue: ", q.dequeue())
 print("Peek: ", q.peek())

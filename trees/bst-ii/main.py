@@ -3,11 +3,11 @@ Binary Tree
 """
 
 class Node:
-    def __init__(self, data, left=None, right=None):
+    def __init__(self, value, left=None, right=None):
         """
         Create a node (vertex) of the tree
         """
-        self.data = data
+        self.value = value
         self.left = left
         self.right = right
 
@@ -23,7 +23,7 @@ class Node:
             self.right = child
 
     def __str__(self):
-        return str(self.data)
+        return str(self.value)
 
   
 

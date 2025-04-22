@@ -3,8 +3,8 @@ Linked list stack
 """
 
 class Node:
-    def __init__(self, data):
-        self.data = data
+    def __init__(self, value):
+        self.value = value
         self.next = None
 
 class Stack:
@@ -24,7 +24,7 @@ class Stack:
     def top(self):
         if self.isEmpty():
             return "Stack is empty"
-        return self.head.data
+        return self.head.value
     
     # Insert an item
     def push(self, val):
@@ -41,13 +41,13 @@ class Stack:
         node = self.head
         self.head = self.head.next
         self.size -= 1
-        return node.data
+        return node.value
 
     # Print stack
     def printStack(self):
         temp = self.head
         while temp:
-            print(temp.data, end=" ")
+            print(temp.value, end=" ")
             temp = temp.next
         print()
 

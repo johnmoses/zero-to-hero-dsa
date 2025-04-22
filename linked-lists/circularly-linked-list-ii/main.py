@@ -3,13 +3,13 @@ Circularly-Linked List
 """
 
 class Node:
-    def __init__(self, data):
-        self.data = data
+    def __init__(self, value):
+        self.value = value
         self.next = None
         self.prev = None
 
     def __str__(self):
-        return str(self.data)
+        return str(self.value)
 
 class LinkedList:
     def __init__(self):
@@ -28,13 +28,13 @@ class LinkedList:
     def __len__(self):
         return sum(1 for _ in self)
 
-    def add(self, data):
+    def add(self, value):
         if self.head is None:
-            newNode = Node(data)
+            newNode = Node(value)
             self.head = newNode
             self.tail = newNode
         else:
-            self.tail.next = Node(data)
+            self.tail.next = Node(value)
             self.tail = self.tail.next
         return self.tail
 
