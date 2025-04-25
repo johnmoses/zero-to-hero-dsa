@@ -12,8 +12,8 @@ transpose = [[row[i] for row in matrix] for i in range(3)]
 print('Transpose: ', transpose)
 
 # Multiplication
-multiply = [[sum(a * b for a, b in zip(row, col)) for col in zip(*matrix)] for row in matrix]
-print('Multiplication: ', multiply)
+multiplication = [[sum(a * b for a, b in zip(row, col)) for col in zip(*matrix)] for row in matrix]
+print('Multiplication: ', multiplication)
 
 # Determinant
 determinant = sum(a * b * c for a, b, c in zip(matrix[0], matrix[1], matrix[2]))
@@ -59,21 +59,22 @@ print("Row 3 column 3:", matrix[2][2])
 
 # Traversing each row
 print('Traversing')
+# Loop through each row
 for row in matrix:
-  
-    # Traversing each element
-    # in the current row
+    # Traversing each element in the current row
     for x in row:
         print(x, end=" ")
     print()
     
 # Creating a 2d matrix with initial values, say zeroes
 rows, cols = (3, 3)
-# mat2d = [[0] * cols] * rows
+mat2d = [[0] * cols] * rows
+print('2D 1: ', mat2d)
+
 # Alternative
 mat2d = [[0] * cols for _ in range(rows)]   # _ may be i, r or whatever
-print('2D: ', mat2d)
+print('2D 2: ', mat2d)
 
 # Updating the matrix
 mat2d[1][2] = 3
-print('2D 1', mat2d)
+print('2D updated', mat2d)

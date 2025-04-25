@@ -2,7 +2,7 @@
 Graph Representation
 
  Given the nodes ['A', 'B', 'C', 'D', 'E'] and 
- edges edges = [
+ edges = [
     [0, 1, 1, 1, 0],  # Edges for A
     [1, 0, 1, 0, 0],  # Edges for B
     [1, 1, 0, 0, 0],  # Edges for C

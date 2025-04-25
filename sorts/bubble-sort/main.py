@@ -6,15 +6,6 @@ Example 1:
     Output: [11, 12, 22, 25, 34, 5, 64, 90]
 """
 def bubbleSort1(arr):
-    """
-    Sorts an array using the Bubble Sort algorithm.
-
-    Args:
-        arr (list): The array to be sorted.
-
-    Returns:
-        list: The sorted array.
-    """
     n = len(arr)
     for i in range(n):
         for j in range(0, n-i-1):

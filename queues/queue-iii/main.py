@@ -10,6 +10,15 @@ class Queue:
     def __init__(self):
         self.front = None
         self.rear = None
+        self.size = 0
+
+    # Get size
+    def getSize(self):
+        return self.size
+
+    # Check if empty
+    def isEmpty(self):
+        return self.size == 0
 
     def enqueue(self, value):
         new_node = Node(value)
@@ -18,12 +27,14 @@ class Queue:
             return
         self.rear.next = new_node
         self.rear = new_node
+        self.size += 1
 
     def dequeue(self):
         if self.front is None:
             return None
         temp = self.front
         self.front = temp.next
+        self.size -= 1
         if self.front is None:
             self.rear = None
         return temp.value
@@ -35,12 +46,13 @@ class Queue:
             current = current.next
         print()
 
-queue = Queue()
-queue.enqueue(10)
-queue.enqueue(20)
-queue.enqueue(30)
-queue.enqueue(40)
-queue.enqueue(50)
-queue.display()
-print("Dequeued item is", queue.dequeue())
-queue.display()
+q = Queue()
+q.enqueue('A')
+q.enqueue('B')
+q.enqueue('C')
+q.display()
+print('Size: ', q.getSize())
+print("Dequeued item is", q.dequeue())
+q.display()
+print("isEmpty: ", q.isEmpty())
+print('Size: ', q.getSize())

@@ -27,10 +27,10 @@ b.right = e
 c.left = f
 c.right = g
 
-# Test
+# Access values
 print("a.right.left.value:", a.right.left.value)
 
-# Traverse
+# Traverse entire tree
 print('Traverse 1:')
 tree = []
 root = a
@@ -45,7 +45,7 @@ while root or nodes:
 values = [str(i) + '->' for i in tree]
 print(values)
 
-# Traverse tree
+# Traverse a selected root
 print('Traverse 2:')
 def traverse(root):
     if root is None:

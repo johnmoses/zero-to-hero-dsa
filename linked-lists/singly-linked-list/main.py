@@ -88,8 +88,12 @@ class LinkedList:
         print("")
 
     def __str__(self):
-        values = [str(x.value) for x in self]
-        return ' -> '.join(values)
+        current = self.head
+        nodes = ''
+        while current:
+            nodes += (str(current.value))
+        return nodes
+
 
 ll = LinkedList()
 ll.add_head(20)

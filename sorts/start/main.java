@@ -1,5 +1,5 @@
 /**
- * Simple Sort Algorithm
+ * Simple  Bubble Sort Algorithm
 
 Write a basic sort algorithm that takes a list of numbers and returns a sorted list.
 

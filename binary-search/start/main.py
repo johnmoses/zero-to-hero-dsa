@@ -5,16 +5,23 @@ write a function to search target in nums. If target exists, then return its ind
 You must write an algorithm with O(log n) runtime complexity.
 """
 def binary_search(nums: list[int], target: int) -> int:
+    # Initialize the left and right pointers
     left = 0
     right = len(nums) - 1
-    
+    # Loop through the array
     while left <= right:
+        # Calculate the middle index
         mid = left + (right - left) // 2
+        # Check if the middle element is equal to the target
         if nums[mid] == target:
+            # Return the index of the target
             return mid
+        # Check if the middle element is less than the target
         elif nums[mid] < target:
+            # Update the left pointer to the middle index + 1
             left = mid + 1
         else:
+            # Update the right pointer to the middle index - 1
             right = mid - 1
             
     return -1

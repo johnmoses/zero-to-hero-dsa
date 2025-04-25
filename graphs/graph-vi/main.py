@@ -3,8 +3,8 @@ Adjacency list graph with OOP approach
 """
 
 class Node:
-    def __init__(self, data):
-        self.data = data    # Stored data
+    def __init__(self, value):
+        self.value = value    # Stored data
         self.next = None    # Next pointer
 
 class Graph:
@@ -28,7 +28,7 @@ class Graph:
             print("Node " + str(i) + ":", end="")
             temp = self.nodes[i]
             while temp:
-                print(" -> {}".format(temp.data), end="")
+                print(" -> {}".format(temp.value), end="")
                 temp = temp.next
             print(" \n")
 

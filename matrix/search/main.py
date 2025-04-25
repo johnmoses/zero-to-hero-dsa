@@ -24,7 +24,6 @@ def search1(arr, x):
 
 def search2(arr, x):
     rows, cols = len(arr), len(arr[0])
-
     # Traverse each row and column
     for i in range(rows):
         for j in range(cols):

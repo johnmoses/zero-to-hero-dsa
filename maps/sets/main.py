@@ -2,45 +2,41 @@
 Write a basic example of set data structure with basic functionalities
 """
 # Creating a set
-my_set = {1, 2, 3, 4, 5}
-print("Original set:", my_set)
+st = {1, 2, 3, 4, 5}
+print("Original set:", st)
 
 # Adding elements to the set
-my_set.add(6)
-print("After adding 6:", my_set)
-my_set.update([7, 8, 9])
-print("After updating with [7, 8, 9]:", my_set)
+st.add(6)
+print("After adding 6:", st)
+st.update([7, 8, 9])
+print("After updating with [7, 8, 9]:", st)
 
 # Removing elements from the set
-my_set.remove(3)
-print("After removing 3:", my_set)
-my_set.discard(8)
-print("After discarding 8:", my_set)
+st.remove(3)
+print("After removing 3:", st)
+st.discard(8)
+print("After discarding 8:", st)
 
 # Checking if an element is in the set
-print("Is 4 in the set?", 4 in my_set)
-print("Is 10 in the set?", 10 in my_set)
-
-# Set operations
-set1 = {1, 2, 3, 4, 5}
-set2 = {4, 5, 6, 7, 8}
-print("Union:", set1.union(set2))
-print("Intersection:", set1.intersection(set2))
-print("Difference:", set1.difference(set2))
-print("Symmetric difference:", set1.symmetric_difference(set2))
-
-# Create a set of integers
-my_set = {1, 2, 3, 4, 5, 5, 5}  # Duplicate values are automatically removed
-print(my_set)  # Output: {1, 2, 3, 4, 5}
+print("Is 4 in the set?", 4 in st)
+print("Is 10 in the set?", 10 in st)
 
 # Create a set from a list
-my_set2 = set([1, 2, 3, 4])  # Convert a list to a set
-print(my_set2)  # Output: {1, 2, 3, 4}
+st1 = set([1, 2, 3, 4])  # Convert a list to a set
+print(st1)  # Output: {1, 2, 3, 4}
 
 # Create an empty set
-my_set3 = {}  # This creates an empty dictionary, not an empty set
-print(type(my_set3))  # Output: <class 'dict'>
+st2 = {}  # This creates an empty dictionary, not an empty set
+print(type(st2))  # Output: <class 'dict'>
 
 # Create an empty set using the set() constructor
-my_set4 = set()  # This creates an empty set
-print(type(my_set4))  # Output: <class 'set'>
+st3 = set()  # This creates an empty set
+print(type(st3))  # Output: <class 'set'>
+
+# More set operations
+st4 = {1, 2, 3, 4, 5}
+st5 = {4, 5, 6, 7, 8}
+print("Union:", st4.union(st5))
+print("Intersection:", st4.intersection(st5))
+print("Difference:", st4.difference(st5))
+print("Symmetric difference:", st4.symmetric_difference(st5))

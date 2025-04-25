@@ -2,6 +2,8 @@
 
 A graph is a set of objects called `vertices`, together with a collection of pairwise connections between them called `edges`. It is a way or representing relationships between pairs of objects.
 
+Practical examples of graphs are city maps, airline routes, electrical wiring mappings, link between web pages, relationship between students and courses, communication network diagram.
+
 The vertices are also called `nodes` while the edges are also called `arcs`. The edges can be described as `directed` if they are ordered and `undirected` if they are not ordered, and `unidirected` if all edges are undirected.
 
 The vertices and edges may also be `labeled` or `unlabeled`. When the edges are labeled with numbers, the numbers can be viewed as `weights`, and the graph is said to be a `weighted`
@@ -16,8 +18,6 @@ A graph is said to be `connected` if there is a path from
 each vertex to every other vertex.
 
 A graph is also said to be `complete` if there is an edge from each vertex to every other vertex
-
-Practical examples of graphs are city maps, airline routes, electrical wiring mappings, link between web pages, relationship between students and courses, communication network diagram
 
 ## Graph Representation
 

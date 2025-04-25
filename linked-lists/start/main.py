@@ -20,26 +20,24 @@ b.next = c
 # Traverse and display nodes in order
 
 # Method 1
-# Set first node as current
-current = a
+current = a # Set first node as current
 while current:
     print(current.value, end=' -> ')
+    # Set next pointer of current as new current node
     current = current.next
 print()
 
 # Method 2
-# Set first node as current
-current = a
-nodes = ""
+current = a # Set first node as current
+nodes = ""  # Variable to hold the values
 while current:
     nodes += (str(current.value) + ' -> ')
     current = current.next
 print(nodes)
 
 # Method 3
-# Set first node as current
-current = a
-nodes = []
+current = a # Set first node as current
+nodes = []  # Variable to hold the values
 while current:
     nodes.append(current.value)
     current = current.next

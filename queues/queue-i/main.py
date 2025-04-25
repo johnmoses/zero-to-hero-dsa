@@ -6,9 +6,11 @@ class Queue:
     """ 
     Initialize a queue and add some behavious
     """
+    # The constructor
     def __init__(self):
         self.values = []
 
+    # Acessor function
     def __len__(self):
         return len(self.values)
     
@@ -26,11 +28,11 @@ class Queue:
             return "Queue is empty"
         return self.values[0]
     
-    # Insert an item
+    # Insert an item at the back
     def enqueue(self, val):
         self.values.append(val)
     
-    # Remove an item
+    # Remove an item from the front
     def dequeue(self):
         if self.isEmpty():
             return "Queue is empty"
@@ -45,10 +47,10 @@ q = Queue()
 q.enqueue('A')
 q.enqueue('B')
 q.enqueue('C')
-print("Queue: ", q.values)
+print("Queue: ", q)
 print("Size: ", q.getSize())
 print("Dequeue: ", q.dequeue())
+print("After deueue: ", q)
 print("Peek: ", q.peek())
 print("isEmpty: ", q.isEmpty())
 print("Size: ", q.getSize())
-print(q)

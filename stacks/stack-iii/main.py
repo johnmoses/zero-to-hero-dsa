@@ -52,9 +52,9 @@ class Stack:
         print()
 
 s = Stack()
-s.push(1)
-s.push(2)
-s.push(3)
+s.push('A')
+s.push('B')
+s.push('C')
 s.printStack()
 print('Size: ', s.getSize())
 print('Pop: ', s.pop())

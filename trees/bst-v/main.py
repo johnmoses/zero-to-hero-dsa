@@ -1,11 +1,11 @@
 """ 
 Binary tree from string
 """
-string = "(1,2,3,4,5)"
+s = "(1,2,3,4,5)"
 
 class Node:
-    def __init__(self, data):
-        self.data = data
+    def __init__(self, value):
+        self.value = value
         self.left = None
         self.right = None
 
@@ -30,4 +30,5 @@ class Tree:
         return build_tree(s, 0)[0] if s else None
 
 tree = Tree()
-# print(tree.string_to_tree(string))
+tree.string_to_tree(s)
+# print(tree.string_to_tree(s))
