@@ -4,16 +4,15 @@ Find start index of a rotated non-decreasing array
 """
 
 def findStartIndex(arr):
-    # Initialize length of array n, low pointer lo, high pointer hi to n-1
-    n = len(arr)
+    # Initialize low pointer lo, high pointer hi to n-1
     lo = 0
-    hi = n - 1
+    hi = len(arr) - 1
 
     # Iterate over array and do a binary search approach
     while lo <= hi:
         mid = (lo + hi) // 2
 
-        if arr[mid] <= arr[n - 1]:
+        if arr[mid] <= arr[hi]:
             hi = mid - 1
         else:
             lo = mid + 1

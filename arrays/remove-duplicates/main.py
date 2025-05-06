@@ -19,10 +19,12 @@ def removeDuplicates2(arr):
     # Iterate over array
     for i in arr:
         if i not in res:
+            # Append i to res if not already there
             res.append(i)
     return res
 
 def removeDuplicates3(arr):
+    # Define a list of a set of the arr to automatically remove duplicates
     res = list(set(arr))
     return res
 

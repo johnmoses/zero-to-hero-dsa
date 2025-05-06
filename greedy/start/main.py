@@ -15,15 +15,6 @@ Steps are
 """
 
 def greedy_change(amount):
-    """
-    Greedy algorithm to find the minimum number of coins required to make change for a given amount of money.
-
-    Args:
-        amount (int): The amount of money for which change needs to be made.
-
-    Returns:
-        list: A list containing the minimum number of coins required for the given amount.
-    """
     # Initialize an empty list to store the coins
     coins = []
     

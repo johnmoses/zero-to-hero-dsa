@@ -6,15 +6,6 @@ In other words, it is a palindrome if it is equal to its reverse.
 """
 
 def is_palindrome(string):
-    """
-    Checks if the given string is a palindrome.
-
-    Args:
-        string (str): The input string to be checked.
-
-    Returns:
-        bool: True if the string is a palindrome, False otherwise.
-    """
     # Convert the string to lowercase for case-insensitive comparison
     string = string.lower()
 

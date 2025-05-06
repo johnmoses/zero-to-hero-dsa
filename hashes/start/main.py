@@ -2,72 +2,47 @@
 Create a basic hash table to store adn access fruits based on their first letters.
 """
 # Create an empty map or dictionary
-m = {}
+dct = {}
 
-# Add key-value pairs to the map
-m["a"] = "apple"
-m["b"] = "banana"
-m["c"] = "cherry"
+# Add key-value pairs to the dictionary
+dct["a"] = 1
+dct["b"] = 2
+dct["c"] = 3
 
-# Print the map
-print(m)  # Output: {'a': 'apple', 'b': 'banana', 'c': 'cherry'}
-print(m["a"])  # Output: apple
+# Print the dictionary
+print(dct)  # Output: {'a': 1, 'b': 2, 'c': 3}  
+print(dct["a"])  # Output: 1
 
-# Check if a key exists in the map
-print("a" in m)  # Output: True
+# Check if a key exists in the dictionary
+print("a" in dct)  # Output: True
 
-# Remove a key-value pair from the map
-del m["a"]
-print(m)  # Output: {'b': 'banana', 'c': 'cherry'}
-print("a" in m)  # Output: False
-print("b" in m)  # Output: True
+# Remove a key-value pair from the dictionary
+del dct["a"]
+print('Deleted a: ', dct)  # Output: {'b': 2, 'c': 3}
+print("a" in dct)  # Output: False
+print("b" in dct)  # Output: True
 
-# Iterate over the map
-for key, value in m.items():
+# Iterate over the dictionary
+print('Keys and values:')
+for key, value in dct.items():
     print(key, value)
 
-# Output:
-    # ('b', 'banana')
-# ('c', 'cherry')
-
-# Iterate over the keys in the map
-for key in m.keys():
+# Iterate over the keys in the dictionary
+print('Keys:')
+for key in dct.keys():
     print(key)
 
-# Output:
-    # b
-    # c
-
-# Iterate over the values in the map
-for value in m.values():
+# Iterate over the values in the dictionary
+print('Values:')
+for value in dct.values():
     print(value)
-    # Output:
-    # banana
-    # cherry
 
-# Iterate over the keys in the map using a list comprehension
-for key in [k for k in m.keys()]:
+# Iterate over the keys in the dictionary using a list comprehension
+print('Keys with list comprehension:')
+for key in [k for k in dct.keys()]:
     print(key)
-    # Output:
-    # b
-    # c
 
-# Iterate over the values in the map using a list comprehension
-for value in [v for v in m.values()]:
+# Iterate over the values in the dictionary using a list comprehension
+print('Values with list comprehension:')
+for value in [v for v in dct.values()]:
     print(value)
-    # Output:
-    # banana
-    # cherry
-
-# Iterate over the keys in the map using a list comprehension and sorted
-for key in sorted([k for k in m.keys()]):
-    print(key)
-    # Output:
-    # b
-    # c
-
-# Iterate over the values in the map using a list comprehension and sorted
-for value in sorted([v for v in m.values()]):
-    print(value)
-    # Output:
-    # banana

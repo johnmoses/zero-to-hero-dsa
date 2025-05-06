@@ -9,71 +9,66 @@ arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # All array elements
 print(arr)
 
-# Select element by index
-print('Selecting')
-print(arr[0])
-print(arr[1])
-print(arr[2])
-print(arr[3])
-print(arr[4])
+# Selecting
+print('0: ', arr[0])
+print('1: ', arr[1])
+print('2: ', arr[2])
+print('3: ', arr[3])
+print('4: ', arr[4])
 
-print('Slicing')
-print(arr[-1])
-print(arr[1:])
-print(arr[:4])
-print(arr[1:3])
-print(arr[::2])
-print(arr[::-1])
-print(arr[1:4:2])
-print(arr[1::2])
+# Slicing
+print('-1: ', arr[-1])
+print('1: ', arr[1:])
+print(':4: ', arr[:4])
+print('1:3: ', arr[1:3])
+print('::2: ', arr[::2])
+print('::-1: ', arr[::-1])
+print('1:4:2: ', arr[1:4:2])
+print('1::2: ', arr[1::2])
 
+# Sequence operations
+print('Index 3: ', arr.index(3))
+print('Count at 3: ', arr.count(3))
+print(arr)
 
 # Add item to end
-print('Adding')
 arr.append(11)
-print(arr)
+print('Append 11: ', arr)
 
 # Add at specified index
 arr.insert(0, 0)
-print(arr)
+print('Insert 0 at 0: ', arr)
 
 # Remove item
-print('Removing')
 arr.remove(0)
-print(arr)
+print('Remove at 0: ', arr)
 
 # Remove top item
 arr.pop()
-print(arr)
+print('Pop: ', arr)
 arr.pop(0)
-print(arr)
+print('Pop at 0: ', arr)
 
 # Sort items
-print('Sorting')
 arr.sort()
-print(arr)
+print('Sort: ', arr)
 
 # Reverse order
 arr.reverse()
-print(arr)
-
-# Item at specified index
-print(arr.index(3))
-print(arr.count(3))
-print(arr)
+print('Reverse: ', arr)
 
 # Lenght of array
-print(len(arr))
+print('Len: ', len(arr))
 
 # Maximum element
-print(max(arr))
+print('Max: ', max(arr))
 
 # Minimum element
-print(min(arr))
+print('Min: ', min(arr))
 
 # Sum of elements
-print(sum(arr))
-print(sum(arr) / len(arr))
+print('Sum: ', sum(arr))
+print('Sum/len: ', sum(arr) / len(arr))
 
 # Remove all items
 arr.clear()

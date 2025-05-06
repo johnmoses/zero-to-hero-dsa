@@ -9,13 +9,12 @@ Example:
     Output: [(1, 2), (2,), (1,), (1, 2, 2), (2, 2), ()]
 """
 
-def subsetsUnique(nums):
-    
+def find_unique_subsets(nums):
     def backtrack(res, nums, stack, pos):
+        # Base case
         if pos == len(nums):
             res.add(tuple(stack))
         else:
-            # take
             stack.append(nums[pos])
             backtrack(res, nums, stack, pos+1)
             stack.pop()
@@ -27,4 +26,4 @@ def subsetsUnique(nums):
     backtrack(res, nums, [], 0)
     return list(res)
 
-print(subsetsUnique([1,2,2]))
+print(find_unique_subsets([1,2,2]))
