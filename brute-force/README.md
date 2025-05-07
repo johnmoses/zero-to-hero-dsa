@@ -1,3 +1,5 @@
 # Brute force
 
-This method involves trying every possible solution until the correct one is found. It is simple but can be inefficient for large problem sizes.
+This is a simple but comprehensive strategy that systematically explores every option untill the solution is found. It is efficient for small but inefficient for large scale problems.
+
+Brute force can be applied to searching, sorting and compression problems.
