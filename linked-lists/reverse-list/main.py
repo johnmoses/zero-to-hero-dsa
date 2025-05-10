@@ -1,7 +1,7 @@
 """
 Reverse List
 """
-head = [1,2,3,4,5]
+from typing import Optional
 
 # Definition for singly-linked list.
 class ListNode:
@@ -12,25 +12,29 @@ class ListNode:
     def __str__(self):
         return str(self.val)
 
-class Solution:
-    def reverseList(self, head):
-        """
-        :type head: ListNode
-        :rtype: ListNode
-        """
-        prev_node = None
-        curr_node = head
-        while curr_node:
-            next_node = curr_node.next # Remember next node
-            curr_node.next = prev_node  # REVERSE! None, first time round.
-            prev_node = curr_node  # Used in the next iteration.
-            curr_node = next_node  # Move to next node.
-        head = prev_node
-        return head
+def reverseList(head: Optional[ListNode]) -> Optional[ListNode]:
+    # Initialize a dummy node, which will be the new head after reversal
+    dummy_node = ListNode()
 
-    # def __str__(self):
-    #     values = [str(x.head) for x in self]
-    #     return ' -> '.join(values)
+    # Start from head node
+    current_node = head
 
-sn = Solution()
-print(sn.reverseList(ListNode(head)))
+    # Iterate over the list
+    while current_node is not None:
+        # Store next node
+        next_node = current_node.next
+
+        # Reverse the link so that current_node.next points to the node before it
+        current_node.next = dummy_node.next
+        dummy_node.next = current_node
+
+        # Move to the next node in the original list
+        current_node = next_node
+    # Return dummy node's next which now points to the head of the reversed list
+    curr = dummy_node.next
+    while curr:
+        print(curr.val)
+        curr = curr.next
+    return dummy_node.next
+
+reverseList(ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5))))))

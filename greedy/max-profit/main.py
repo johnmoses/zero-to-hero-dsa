@@ -22,6 +22,7 @@ def max_profit(prices: list[int]) -> int:
 
     min_price = prices[0]
     max_profit: int = 0
+    
     # Iterate over prices
     for price in prices:
         min_price = min(price, min_price)

@@ -1,44 +1,32 @@
 """ 
 Two Pointers.
 
-Given an integer array nums sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order.
+Find two numbers in a sorted array that add up to a target value.
 
-Example 1:
+Example:
+Input: nums = [1, 2, 3, 4, 6], target = 6
+Output: [1, 3]
 
-Input: nums = [-4,-1,0,3,10]
-Output: [0,1,9,16,100]
-Explanation: After squaring, the array becomes [16,1,0,9,100].
-After sorting, it becomes [0,1,9,16,100].
-Example 2:
-
-Input: nums = [-7,-3,2,3,11]
-Output: [4,9,9,49,121]
-
-Constraints:
-
-1 <= nums.length <= 104
--104 <= nums[i] <= 104
-nums is sorted in non-decreasing order.
+Explanation:
+Initialize two pointers, one at the start (left) and one at the end (right) of the array.
+Check the sum of the elements at the two pointers.
+If the sum equals the target, return the indices.
+If the sum is less than the target, move the left pointer to the right.
+If the sum is greater than the target, move the right pointer to the left.
 """
-def sorted_squares(nums):
-    # Create result array to store squares
-    result = [0] * len(nums)
+def find_two_sum(nums: list[int], target: int) -> list[int]:
+    # Use two pointers to find pair summing to target
+    left, right = 0, len(nums) - 1
     
-    # Two pointers - start and end of array
-    left = 0
-    right = len(nums) - 1
-    idx = len(nums) - 1
-    
-    # Compare absolute values from both ends and place squares
-    while left <= right:
-        if abs(nums[left]) > abs(nums[right]):
-            result[idx] = nums[left] * nums[left]
+    while left < right:
+        curr_sum = nums[left] + nums[right]
+        if curr_sum == target:
+            return [left, right]
+        elif curr_sum < target:
             left += 1
         else:
-            result[idx] = nums[right] * nums[right]
             right -= 1
-        idx -= 1
             
-    return result
+    return []  # No solution found
 
-print(sorted_squares([-4,-1,0,3,10]))
+print(find_two_sum([1, 2, 3, 4, 6], 6))

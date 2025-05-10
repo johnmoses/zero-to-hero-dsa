@@ -15,11 +15,20 @@ There are many types of linked lists:
 
 ## Linked List operations
 
-Basic linked list operations are as follows:
-
 - Insert
 - Delete
 - Traverse
 - Search
+- Reverse
 
 Linked lists do not have random access to elements as we see in arrays, elements are accessed through traversal. To visit `ith` element for example in a list of `n` elements, it takes `O(n)` time.
+
+## LinkedList In-place Reversal
+
+In-place Reversal of a LinkedList pattern reverses parts of a linked list without using extra space. This approach can be used to reverse sections of a linked list.
+
+## Problems
+
+Reverse Linked List (LeetCode #206)
+Reverse Linked List II (LeetCode #92)
+Swap Nodes in Pairs (LeetCode #24)

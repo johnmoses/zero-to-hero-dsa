@@ -7,3 +7,15 @@ Matrix or grid is a two-dimensional array arranged in rows and columns. It is co
 The cell a[0] [0] is the first element of the first row and first column. The value in the first square bracket represents the row number and the value inside the second square bracket represents the column number. (i.e, a[row] [column]).
 
 The rows are horizontal while columns are vertical in orientation.
+
+## Traversal
+
+Matrix Traversal involves traversing elements in a matrix using different techniques (DFS, BFS, etc.).
+
+Use this pattern for problems involving traversing 2D grids or matrices horizontally, vertically or diagonally.
+
+## Problems
+
+Flood Fill (LeetCode #733)
+Number of Islands (LeetCode #200)
+Surrounded Regions (LeetCode #130)
