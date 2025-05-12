@@ -1,6 +1,6 @@
 # Breadth First Search
 
-Breadth First Search algorithm is a traversal technique that explores nodes level by level in a tree or graph.
+Breadth First Search algorithm is a traversal technique that explores nodes level by level in a tree, graph or matrix.
 
 It works by first visiting all nodes in a level before visiting other nodes in the next level. It makes use of a queue (First In First Out) to deque a node and enqueue it's children.
 

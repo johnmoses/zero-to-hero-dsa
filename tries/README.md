@@ -1,6 +1,6 @@
 # Tries
 
-A Trie is a special form of a N-ary tree. Typically, a trie is used to store strings. Each Trie node represents a string (a prefix). Each node might have several children nodes while the paths to different children nodes represent different characters. And the strings the child nodes represent will be the origin string represented by the node itself plus the character on the path
+A Trie or prefix tree is a special form of a N-ary tree. Typically, a trie is used to store strings. Each Trie node represents a string (a prefix). Each node might have several children nodes while the paths to different children nodes represent different characters. And the strings the child nodes represent will be the origin string represented by the node itself plus the character on the path
 
 In the example, the value we mark in each node is the string the node represents. For instance, we start from the root node and choose the second path 'b', then choose the first child 'a', and choose child 'd', finally we arrived at the node "bad". The value of the node is exactly formed by the letters in the path from the root to the node sequentially.
 
@@ -38,3 +38,9 @@ Constraints:
 1 <= word.length, prefix.length <= 2000
 word and prefix consist only of lowercase English letters.
 At most 3 * 104 calls in total will be made to insert, search, and startsWith.
+
+## Efficiency
+
+Insertion: O(n) Time and O(n) Space
+Search: O(n) Time and O(1) Space
+Prefix search: O(n) Time and O(1) Space

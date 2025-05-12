@@ -1,45 +1,66 @@
 """ 
 Tries
 
-Write a basic tries algorithm
+Basic representation
 """
 class TrieNode:
     def __init__(self):
         self.children = {}
         self.endOfWord = False
 
-class Trie:
-    def __init__(self):
-        self.root = TrieNode()
+def insert(root, key):
 
-    def insert(self, word):
-        curr = self.root
-        for c in word:
-            if c not in curr.children:
-                curr.children[c] = TrieNode()
-            curr = curr.children[c]
-        curr.endOfWord = True
+    # Initialize the curr pointer with the root node
+    curr = root
 
-    def search(self, word):
-        curr = self.root
-        for c in word:
-            if c not in curr.children:
-                return False
-            curr = curr.children[c]
-        return curr.endOfWord
+    # Iterate across the length of the string
+    for c in key:
 
-    def startsWith(self, prefix):
-        curr = self.root
-        for c in prefix:
-            if c not in curr.children:
-                return False
-            curr = curr.children[c]
-        return True
+        # Check if the node exists for the
+        if c not in curr.children:
+            curr.children[c] = TrieNode()
+        curr = curr.children[c]
 
-trie = Trie()
-trie.insert("apple")
-print(trie.search("apple"))
-print(trie.search("app"))
-print(trie.startsWith("app"))
-trie.insert("app")
-print(trie.search("app"))
+    # Mark the end of the word
+    curr.endOfWord = True
+
+def search(root, key):
+
+    # Initialize the curr pointer with the root node
+    curr = root
+
+    # Iterate across the length of the string
+    for c in key:
+
+        # Check if the node exists for the 
+        if c not in curr.children:
+            return False
+        curr = curr.children[c]
+
+    # Return true if the word exists and is marked as ending
+    return curr.endOfWord
+
+def isPrefix(root, key):
+    curr = root
+    for c in key:
+        if c not in curr.children:
+            return False
+        curr = curr.children[c]
+
+    return True
+
+def delete(root, key):
+    curr = root
+    for c in key:
+        index = ord(c) - ord('a')
+        curr = curr.children[index]
+
+    curr.endOfWord = False
+
+root = TrieNode()
+insert(root, "apple")
+print(search(root, "apple"))
+print(search(root, "app"))
+print(isPrefix(root, "app"))
+insert(root, "app")
+print(search(root, "app"))

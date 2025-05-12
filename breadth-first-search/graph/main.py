@@ -21,11 +21,11 @@ def bfs(graph, start=1):
         node = queue.popleft()
         result.append(node)
         
-        # Add unvisited neighbors to queue
-        for neighbor in graph[node-1]:
-            if neighbor not in visited:
-                visited.add(neighbor)
-                queue.append(neighbor)
+        # Add unvisited neighbors 'i' to queue
+        for i in graph[node-1]:
+            if i not in visited:
+                visited.add(i)
+                queue.append(i)
                 
     return result
 

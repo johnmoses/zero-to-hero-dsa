@@ -1,6 +1,6 @@
 # Depth First Search
 
-Depth First Search (DFS) algorithm is used to search for a value in a tree or graph. As a traversal technique it explores as far down a branch as possible before backtracking.
+Depth First Search (DFS) algorithm is used to search for a value in a tree, graph or matrix. As a traversal technique it explores as far down a branch as possible before backtracking.
 
 With it we go as deep as possible searching for the target value, and when we cannot find it, we retrace our steps to look for it at other places or nodes.
 

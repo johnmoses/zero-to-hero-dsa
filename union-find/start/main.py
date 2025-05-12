@@ -1,5 +1,5 @@
 """ 
-Union Find.
+Union Find or Disjoint Set Union(DSU).
 """
 class UnionFind:
     # initialize the data structure that maps the node to its set ID

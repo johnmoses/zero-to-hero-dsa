@@ -3,11 +3,11 @@ Binary search examples
 """
 
 arr1 = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
-arr2 = ['A','B','D','G','C','F','E']
 target1 = 9
+arr2 = ['A','B','D','G','C','F','E']
 target2 = 'B'
 
-def binary_search(arr, target):
+def binary_search1(arr, target):
     # Initialize variables
     left = 0
     n = len(arr)
@@ -24,10 +24,10 @@ def binary_search(arr, target):
             right = mid - 1
     return -1
 
-print(binary_search(arr1, target1))
-print(binary_search(arr2, target2))
+print(binary_search1(arr1, target1))
+print(binary_search1(arr2, target2))
 
-def binary_search_1(arr, target):
+def binary_search2(arr, target):
     # Initialize variables
     left = 0
     n = len(arr)
@@ -43,5 +43,5 @@ def binary_search_1(arr, target):
         else:
             right = mid
 
-print(binary_search_1(arr1, target1))
-print(binary_search_1(arr2, target2))
+print(binary_search2(arr1, target1))
+print(binary_search2(arr2, target2))

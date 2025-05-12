@@ -1,5 +1,15 @@
 """ 
 Breadth First Search by queue on a matrix
+
+Given a 2d matrix, perform BFS on it
+
+Example 1:
+
+Input: matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
 """
 from collections import deque
 
@@ -24,10 +34,12 @@ def bfs(matrix, start):
                 visited[nr][nc] = True
 
 matrix = [
-    [1, 2, 3, 4],
-    [5, 6, 7, 8],
-    [9, 10, 11, 12]
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
 ]
 
 start_node = (0, 0) # Top-left corner
 bfs(matrix, start_node)
+
+# Output: 1 4 2 7 5 3 8 6 9

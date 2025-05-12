@@ -24,7 +24,7 @@ Two Pointers
 - 3Sum (LeetCode #15)
 - Container With Most Water (LeetCode #11)
 
-Fast and Slow
+Fast and Slow Pointers
 
 Linked List Cycle (LeetCode #141)
 Happy Number (LeetCode #202)

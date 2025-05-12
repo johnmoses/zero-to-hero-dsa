@@ -21,17 +21,17 @@ def dfs_matrix(matrix):
     visited = set()
     result = []
     
-    def dfs(r, c):
+    def dfs(row, col):
         # Check boundaries and if visited
-        if (r < 0 or r >= rows or c < 0 or c >= cols or 
-            (r,c) in visited):
+        if (row < 0 or row >= rows or col < 0 or col >= cols or 
+            (row,col) in visited):
             return
             
-        visited.add((r,c))
-        result.append(matrix[r][c])
+        visited.add((row,col))
+        result.append(matrix[row][col])
         
         # DFS in all 4 directions
-        for nr, nc in [(r+1,c), (r-1,c), (r,c+1), (r,c-1)]:
+        for nr, nc in [(row+1,col), (row-1,col), (row,col+1), (row,col-1)]:
             dfs(nr, nc)
             
     dfs(0, 0)
@@ -42,3 +42,4 @@ print(dfs_matrix([
     [4, 5, 6],
     [7, 8, 9]
 ]))
+# 1, 4, 7, 8, 5, 2, 3, 6, 9

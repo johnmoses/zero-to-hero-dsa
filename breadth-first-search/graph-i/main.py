@@ -26,17 +26,17 @@ class Graph:
         for node, data in enumerate(self.nodes):
             print(f"Node {node}: {data}")
 
-    def bfs(self, start_node):
-        queue = [self.nodes.index(start_node)]
+    def bfs(self, start):
+        queue = [self.nodes.index(start)]
         visited = [False] * self.size
         visited[queue[0]] = True
             
         while queue:
-            current_node = queue.pop(0)
-            print(self.nodes[current_node], end=' ')
+            node = queue.pop(0)
+            print(self.nodes[node], end=' ')
         
             for i in range(self.size):
-                if self.edges[current_node][i] == 1 and not visited[i]:
+                if self.edges[node][i] == 1 and not visited[i]:
                     queue.append(i)
                     visited[i] = True
 

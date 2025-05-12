@@ -13,8 +13,16 @@ Example 2:
 """
 def sort1(nums):
     return sorted(nums)
-    
+
+
 def sort2(nums):
+    for i in range(len(nums)):
+        for j in range(i+1, len(nums)):
+            if nums[i] > nums[j]:
+                nums[i], nums[j] = nums[j], nums[i]
+    return nums
+    
+def sort3(nums):
     n = len(nums)
     for i in range(n):
         for j in range(0, n-i-1):
@@ -22,12 +30,6 @@ def sort2(nums):
                 nums[j], nums[j+1] = nums[j+1], nums[j]
     return nums
 
-def sort3(nums):
-    for i in range(len(nums)):
-        for j in range(i+1, len(nums)):
-            if nums[i] > nums[j]:
-                nums[i], nums[j] = nums[j], nums[i]
-    return nums
 
 
 print(sort1([1, 5, 2, 3, 4]))

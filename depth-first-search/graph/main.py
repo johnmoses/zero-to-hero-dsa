@@ -16,9 +16,9 @@ def dfs_search(graph, target, start=0):
         if node == target:
             return True
             
-        for neighbor in graph[node]:
-            if neighbor not in visited:
-                if dfs_helper(neighbor):
+        for i in graph[node]:
+            if i not in visited:
+                if dfs_helper(i):
                     return True
 
         return False

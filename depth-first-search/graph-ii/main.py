@@ -10,22 +10,22 @@ graph = {
     'F': ['C', 'E']
 }
 start = "E"
-search_value = "C"
+target = "C"
 
-def dfs(graph, start, search_value, visited = None):
+def dfs(graph, start, target, visited = None):
     if visited is None:
         visited = set()
     
-    if start == search_value:
+    if start == target:
         return True
     visited.add(start)
 
-    for neighbour in graph[start]:
-        if neighbour not in visited:
-            found = dfs(graph, neighbour, search_value, visited)
+    for i in graph[start]:
+        if i not in visited:
+            found = dfs(graph, i, target, visited)
             if found:
                 return True
     return False
    
-res = dfs(graph, start, search_value)
-print(f"element {search_value} : {res}")
+res = dfs(graph, start, target)
+print(f"element {target} : {res}")
