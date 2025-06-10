@@ -83,3 +83,23 @@ ChatGPT’s Language Model
 Generates human-like text through transformer architecture and reinforcement learning.
 
 We will start with a simple example of fibonacci numbers. The two first Fibonacci numbers are 0 and 1, and the next Fibonacci number is always the sum of the two previous numbers
+
+## Common Patterns for Data Structures and Algorithms
+
+1. Two Pointers: Arrays, Lists, Strings, Linked Lists
+2. Sliding Window: Arrays, Lists, Strings
+3. Prefix Sum: Cumulative, Subarray, Subsequence
+4. In-place Reversal: Linked List
+5. Monotonic Stack: Arrays, Strings, Numbers, Orders
+6. Sorts: Quick, Merge, Topological
+7. Top k Elements: Arrays, Heaps
+8. Binary Search: Arrays, Strings, Numbers
+9. DFS on Tree, Graph, Matrix
+10. BFS on Tree, Graph, Matrix
+11. Trie: Arrays, Strings
+12. Dijkstra, Bellman-Ford, Floyd-Warshall, Prim, Kruskal
+13. Back tracking: Subsets, Combinations, Permutations
+14. Dynamic Programming: Optimization, Sequences
+15. Overlapping Intervals: Ranges, Schedules, Gaps
+16. Bit Manipulation: Missing numbers
+17. Union Find

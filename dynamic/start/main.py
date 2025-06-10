@@ -19,16 +19,4 @@ def fibonacci_dp(n):
         
     return fib[n]
 
-def fibonacci_optimized(n):
-    # Use only two variables to optimize space
-    if n <= 1:
-        return n
-        
-    prev, curr = 0, 1
-    for _ in range(2, n + 1):
-        prev, curr = curr, prev + curr
-        
-    return curr
-
 print(fibonacci_dp(10))
-print(fibonacci_optimized(10))

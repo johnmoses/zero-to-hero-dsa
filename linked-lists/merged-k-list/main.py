@@ -18,10 +18,10 @@ class Solution:
         """
         self.nodes = []
         head = point = ListNode(0)
-        for l in lists:
-            while l:
-                self.nodes.append(l.val)
-                l = l.next
+        for i in lists:
+            while i:
+                self.nodes.append(i.val)
+                i = i.next
         for x in sorted(self.nodes):
             point.next = ListNode(x)
             point = point.next

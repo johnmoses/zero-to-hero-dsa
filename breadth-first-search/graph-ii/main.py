@@ -1,5 +1,5 @@
 """ 
-Depth-first-search traversal
+Breadth-first-search traversal
 """
 class Graph:
     def __init__(self, size):
@@ -26,18 +26,19 @@ class Graph:
         for node, data in enumerate(self.nodes):
             print(f"Node {node}: {data}")
 
-    def check_visited(self, v, visited):
-        visited[v] = True
-        print(self.nodes[v], end=' ')
-
-        for i in range(self.size):
-            if self.edges[v][i] == 1 and not visited[i]:
-                self.check_visited(i, visited)
-
-    def dfs(self, node_data):
+    def bfs(self, start):
+        queue = [self.nodes.index(start)]
         visited = [False] * self.size
-        start_node = self.nodes.index(node_data)
-        self.check_visited(start_node, visited)
+        visited[queue[0]] = True
+            
+        while queue:
+            node = queue.pop(0)
+            print(self.nodes[node], end=' ')
+        
+            for i in range(self.size):
+                if self.edges[node][i] == 1 and not visited[i]:
+                    queue.append(i)
+                    visited[i] = True
 
 g = Graph(4)
 g.add_node(0, 'A')
@@ -60,5 +61,5 @@ g.add_edge(1, 5)  # B - F
 g.print_graph()
 
 start_node = 'D'
-print(f"\nDepth First Search starting from {start_node}")
-g.dfs(start_node)
+print(f"\nBreadth First Search starting from {start_node}")
+g.bfs(start_node)

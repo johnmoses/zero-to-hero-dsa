@@ -10,7 +10,7 @@ This technique is used to iterate through a data set, typically an array or a li
 
 - Merging 2 Arrays | Running from beginning of 2 Arrays
 
-- Divide & conquer is similar to Split & Merge but there is one thing added. First, you need to split the given list into 2 separate lists and then do two pointers approach to merge or unify them. There aren’t many problems
+- Divide & conquer is similar to Split & Merge but there is one thing added. First, you need to split the given list into 2 separate lists and then do two pointers approach to merge or unify them.
 
 ## When to use
 

@@ -3,8 +3,8 @@ AVL Tree
 """
 
 class Node:
-    def __init__(self, data):
-        self.data = data
+    def __init__(self, value):
+        self.value = value
         self.left = None
         self.right = None
         self.height = 1
@@ -20,7 +20,7 @@ def getBalance(node):
     return getHeight(node.left) - getHeight(node.right)
 
 def rightRotate(y):
-    print('Rotate right on node',y.data)
+    print('Rotate right on node',y.value)
     x = y.left
     T2 = x.right
     x.right = y
@@ -30,7 +30,7 @@ def rightRotate(y):
     return x
 
 def leftRotate(x):
-    print('Rotate left on node',x.data)
+    print('Rotate left on node',x.value)
     y = x.right
     T2 = y.left
     y.left = x
@@ -39,14 +39,14 @@ def leftRotate(x):
     y.height = 1 + max(getHeight(y.left), getHeight(y.right))
     return y
 
-def insert(node, data):
+def insert(node, value):
     if not node:
-        return Node(data)
+        return Node(value)
 
-    if data < node.data:
-        node.left = insert(node.left, data)
-    elif data > node.data:
-        node.right = insert(node.right, data)
+    if value < node.value:
+        node.left = insert(node.left, value)
+    elif value > node.value:
+        node.right = insert(node.right, value)
 
     # Update the balance factor and balance the tree
     node.height = 1 + max(getHeight(node.left), getHeight(node.right))
@@ -77,7 +77,7 @@ def inOrderTraversal(node):
     if node is None:
         return
     inOrderTraversal(node.left)
-    print(node.data, end=", ")
+    print(node.value, end=", ")
     inOrderTraversal(node.right)
 
 # Inserting nodes

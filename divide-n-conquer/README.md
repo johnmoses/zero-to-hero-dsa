@@ -11,3 +11,8 @@ There are in general three steps that one can follow in order to solve the probl
 2. Conquer. Solve each subproblem recursively.
 
 3. Combine. Combine the results of each subproblem.
+
+## Problems
+
+- Longest Substring with At Least K Repeating Characters (Leetcode 395)
+- Longest Nice Substring (Leetcode 1763)

@@ -13,7 +13,8 @@ Express the solution to a subproblem in terms of solutions to smaller subproblem
 Base Cases:
 Define the solutions to the simplest subproblems that can be solved directly.
 
-Memoization or Tabulation:
+## Memoization or Tabulation
+
 Memoization (Top-Down): Store the results of solved subproblems in a dictionary or array. Before solving a subproblem, check if it's already solved and reuse the stored result.
 Tabulation (Bottom-Up): Build a table (usually an array) of solutions to subproblems, starting from the base cases and working up to the final solution.
 
@@ -41,5 +42,5 @@ Climbing Stairs (LeetCode #70)
 House Robber (LeetCode #198)
 Coin Change (LeetCode #322)
 Longest Common Subsequence (LCS) (LeetCode #1143)
-Longest Increasing Subsequence (LIS) (LeetCode #322)
+Longest Increasing Subsequence (LIS) (LeetCode #300)
 Partition Equal Subset Sum (LeetCode #416)

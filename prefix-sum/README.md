@@ -9,6 +9,16 @@ It has time complexity of O(n) and a space complexity of O(n), it is efficient a
 ## When to use
 
 - To efficiently perform multiple sum queries on a subarray or need to calculate cumulative sums
+- Cumulative sums are needed from index 0 to any element
+- Querying subarray sums frequently across multiple ranges
+- Partial sums can be reused efficiently
+
+## Efficiency
+
+A subarray sum would take O(N). A Q subarrays sum would take O(N*Q)
+
+## Problems
+
 - Range Sum Query — Immutable (LeetCode #303)
 - Contiguous Array (LeetCode #525)
 - Subarray Sum Equals K (LeetCode #560)

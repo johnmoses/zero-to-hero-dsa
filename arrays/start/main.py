@@ -1,7 +1,7 @@
 """
 Arrays
 
-Write code to show the basic functionality or behavior of an array
+Getting started with arrays
 """
 
 arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
