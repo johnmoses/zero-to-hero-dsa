@@ -6,6 +6,6 @@ In an interval array sorted by start time, two intervals [a, b] and [c, d] overl
 
 ## Problems
 
-Merge Intervals (LeetCode #56)
-Insert Interval (LeetCode #57)
-Non-Overlapping Intervals (LeetCode #435)
+- Merge Intervals (LeetCode #56, Grind)
+- Insert Interval (LeetCode #57, Grind)
+- Non-Overlapping Intervals (LeetCode #435)

@@ -1,29 +1,49 @@
 """ 
-Find the maximum sum of a subarray of size k.
+Find Minimum Sum of SubArray of Size K
 
-Example:
-Input: nums = [2, 1, 5, 1, 3, 2], k = 3
-Output: 9
-
-Explanation:
-Start with the sum of the first k elements.
-Slide the window one element at a time, subtracting the element that goes out of the window and adding the new element.
-Keep track of the maximum sum encountered.
+Input: arr = [10, 4, 2, 5, 6, 3, 8, 1]
+k = 3
+Output: 11
 """
-def find_max_subarray_sum(nums, k):
-    # Handle invalid input
-    if not nums or k <= 0 or k > len(nums):
-        return 0
-        
-    # Calculate sum of first window
-    window_sum = sum(nums[:k]) 
-    max_sum = window_sum
+def findMinSubarraySum(arr, k):
+    curr_sum = 0
+    min_sum = float("inf")
+    start = 0
     
-    # Slide window and track max sum
-    for i in range(k, len(nums)):
-        window_sum = window_sum - nums[i-k] + nums[i]
-        max_sum = max(max_sum, window_sum)
+    for i in range(len(arr)):
+        curr_sum += arr[i]
         
-    return max_sum
+        if (i - start + 1 == k):
+            min_sum = min(min_sum, curr_sum)
+            curr_sum -= arr[start]
+            start += 1
+    
+    return min_sum
 
-print(find_max_subarray_sum([2, 1, 5, 1, 3, 2], 3))
+def findMinSubarraySum1(arr, k):
+    # Handle edge cases
+    if not arr or k > len(arr):
+        return 0
+    
+    # Calculate sum of first k elements
+    curr_sum = sum(arr[:k])
+    min_sum = curr_sum
+    
+    # Slide window and track min sum
+    for i in range(k, len(arr)):
+        curr_sum = curr_sum + arr[i] - arr[i-k]
+        min_sum = min(min_sum, curr_sum)
+        
+    return min_sum
+
+def findMinSubarraySum2(arr, k):
+    curr_sum = sum(arr[:k])
+    min_sum = curr_sum
+    for i in range(k, len(arr)):
+        curr_sum = curr_sum + arr[i] - arr[i-k]
+        min_sum = min(min_sum, curr_sum)
+    return min_sum
+
+print(findMinSubarraySum([10, 4, 2, 5, 6, 3, 8, 1], 3))
+print(findMinSubarraySum1([10, 4, 2, 5, 6, 3, 8, 1], 3))
+print(findMinSubarraySum2([10, 4, 2, 5, 6, 3, 8, 1], 3))

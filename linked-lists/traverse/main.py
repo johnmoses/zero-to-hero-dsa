@@ -2,15 +2,15 @@
 Traverse singly-linked list
 """
 class Node:
-    def __init__(self, data):
-        self.data = data
+    def __init__(self, value):
+        self.value = value
         self.next = None
 
 def traverse(head):
     node = head
     nodes = ''
     while node:
-        nodes += (str(node.data) + ' -> ')
+        nodes += (str(node.value) + ' -> ')
         node = node.next
     return nodes
 

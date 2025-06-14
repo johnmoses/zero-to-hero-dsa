@@ -12,4 +12,4 @@ It is important to learn the basics of recursion and depth first search before g
 
 ## Problems
 
-Redundant Connection (Leetcode 684)
+- Redundant Connection (Leetcode 684)

@@ -14,9 +14,10 @@ Sliding window problems are very easy to solve using a brute force approach in O
 
 ## Sample problems
 
-Maximum Average Subarray I (LeetCode #643)
-Longest Substring Without Repeating Characters (LeetCode #3)
-Minimum Window Substring (LeetCode #76)
+- Longest Substring Without Repeating Characters (LeetCode #3, Grind)
+- Minimum Window Substring (LeetCode #76, Grind)
+- Find All Anagrams in a String (LeetCode #438, Grind)
+- Maximum Average Subarray I (LeetCode #643)
 
 Referrences
 

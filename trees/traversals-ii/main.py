@@ -33,7 +33,7 @@ class Tree:
         if node is None:
             return
         self.in_order(node.left)
-        print(node.data, end=" ")
+        print(node, end=" ")
         self.in_order(node.right)
 
     def post_order(self, node):

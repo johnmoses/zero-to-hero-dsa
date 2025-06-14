@@ -21,3 +21,10 @@ This is a `deque()` implementation of a stack
 ## Linked List Stack
 
 The linked list has two methods addHead(item) and removeHead() that run in constant time and are very good in implementing stacks
+
+## Problems
+
+- Valid Parenthesis (Leetcode #20 Grind)
+- Min Stack (Leetcode #155)
+- Evaluate Reverse Polish Notation (Leetcode #150)
+- Daily Temperatures (Leetcode #739)

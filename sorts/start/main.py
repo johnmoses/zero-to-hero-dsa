@@ -23,11 +23,10 @@ def sort2(nums):
     return nums
     
 def sort3(nums):
-    n = len(nums)
-    for i in range(n):
-        for j in range(0, n-i-1):
-            if nums[j] > nums[j+1]:
-                nums[j], nums[j+1] = nums[j+1], nums[j]
+    for i in range(len(nums)):
+        for j in range(i+1, len(nums)):
+            if nums[i] > nums[j]:
+                nums[i], nums[j] = nums[j], nums[i]
     return nums
 
 

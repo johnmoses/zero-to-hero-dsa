@@ -7,7 +7,7 @@ Basic operations of a matrix
 matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 print('Matrix: ', matrix)
 
-# Transpose
+# Transpose or inverse
 transpose = [[row[i] for row in matrix] for i in range(3)]
 print('Transpose: ', transpose)
 
@@ -18,10 +18,6 @@ print('Multiplication: ', multiplication)
 # Determinant
 determinant = sum(a * b * c for a, b, c in zip(matrix[0], matrix[1], matrix[2]))
 print('Determinant: ', determinant)
-
-# Inverse
-inverse = [[row[i] for row in matrix] for i in range(3)]
-print('Inverse: ', inverse)
 
 # Trace
 trace = sum(matrix[i][i] for i in range(3))

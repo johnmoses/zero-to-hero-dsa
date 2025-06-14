@@ -21,27 +21,36 @@ class ListNode:
 
 def reverseList(head: Optional[ListNode]) -> Optional[ListNode]:
     # Initialize a dummy node, which will be the new head after reversal
-    dummy_node = ListNode()
+    prev = ListNode()
 
     # Start from head node
-    current_node = head
+    curr = head
 
     # Iterate over the list
-    while current_node is not None:
+    while curr is not None:
+        print(curr.val)
         # Store next node
-        next_node = current_node.next
+        next_node = curr.next
 
         # Reverse the link so that current_node.next points to the node before it
-        current_node.next = dummy_node.next
-        dummy_node.next = current_node
+        curr.next = prev.next
+        prev.next = curr
 
         # Move to the next node in the original list
-        current_node = next_node
-    # Return dummy node's next which now points to the head of the reversed list
-    curr = dummy_node.next
+        curr = next_node
+    # Return output
+    return prev.next
+
+def reverseList1(head: ListNode) -> ListNode:
+    prev = None
+    curr = head
     while curr:
-        print(curr.val)
-        curr = curr.next
-    return dummy_node.next
+        next = curr.next
+        curr.next = prev
+        prev = curr
+        curr = next
+        print(prev)
+    return prev
 
 reverseList(ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5))))))
+reverseList1(ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5))))))

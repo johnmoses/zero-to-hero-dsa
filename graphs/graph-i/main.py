@@ -8,9 +8,9 @@ class Graph:
         self.edges = [[0] * size for _ in range(size)]  
 
     # Nodes or vertices
-    def add_node(self, index, data):
+    def add_node(self, index, value):
         if 0 <= index < self.size:
-            self.nodes[index] = data
+            self.nodes[index] = value
 
     # Edges in the matrix
     def add_edge(self, u, v):
@@ -23,8 +23,8 @@ class Graph:
         for row in self.edges:
             print(' '.join(map(str, row)))
         print("\nNodes:")
-        for node, data in enumerate(self.nodes):
-            print(f"Node {node}: {data}")
+        for node, value in enumerate(self.nodes):
+            print(f"Node {node}: {value}")
 
 g = Graph(5)
 g.add_node(0, 'A')

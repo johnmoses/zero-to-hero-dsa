@@ -11,15 +11,3 @@ def reverseString1(string):
     return reversed_string
 
 print(reverseString1("MAPS"))
-
-def reverseString2(s):
-    stack = []
-
-    for ch in s:
-        stack.append(ch)
-    revstr = ''
-    while len(stack)!=0:
-        revstr += stack.pop()
-    return revstr
-
-print(reverseString2("MAPS"))

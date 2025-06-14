@@ -5,6 +5,10 @@ Example 1:
 Input: head = [1,2], pos = 0
 Output: true
 
+Example 2
+Input: head = [1], pos = -1
+Output: false
+
 Explanation:
 Initialize two pointers, one moving one step at a time (slow) and the other moving two steps at a time (fast).
 If there is a cycle, the fast pointer will eventually meet the slow pointer.
@@ -34,6 +38,22 @@ def has_cycle(head):
             
     return False
 
-head = ListNode(1)
-head.next = ListNode(2)
-print(has_cycle(head))
+def has_cycle1(head: ListNode) -> bool:
+    if not head or not head.next:
+            return False
+        
+    slow = head
+    fast = head
+    
+    while fast and fast.next:
+        slow = slow.next  
+        fast = fast.next.next
+        if slow == fast:
+            return True
+            
+    return False
+
+# print(has_cycle(ListNode(1)))
+# print(has_cycle1(ListNode(1)))
+# print(has_cycle(ListNode([1,2])))
+print(has_cycle1(ListNode([1,2])))

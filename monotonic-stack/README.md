@@ -17,6 +17,6 @@ It is used for solving questions of the type - next greater element, next smalle
 
 ## Problems
 
-Next Greater Element I (LeetCode #496)
-Daily Temperatures (LeetCode #739)
-Largest Rectangle in Histogram (LeetCode #84)
+- Largest Rectangle in Histogram (LeetCode #84, Grind)
+- Next Greater Element I (LeetCode #496)
+- Daily Temperatures (LeetCode #739)

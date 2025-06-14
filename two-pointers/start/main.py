@@ -29,4 +29,17 @@ def find_two_sum(nums: list[int], target: int) -> list[int]:
             
     return []  # No solution found
 
+def find_two_sum2(nums: list[int], target:int) -> list[int]:
+    left, right = 0, len(nums) -1
+    while left < right:
+        curr_sum = nums[left] + nums[right]
+        if curr_sum == target:
+            return [left, right]
+        elif curr_sum < target:
+            left += 1
+        else:
+            right -= 1
+    return []
+
 print(find_two_sum([1, 2, 3, 4, 6], 6))
+print(find_two_sum2([1, 2, 3, 4, 6], 6))

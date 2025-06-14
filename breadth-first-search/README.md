@@ -10,6 +10,6 @@ Use this when finding the shortest paths in unweighted graphs or level-order tra
 
 ## Problems
 
-Binary Tree Level Order Traversal (LeetCode #102)
-Rotting Oranges (LeetCode #994)
-Word Ladder (LeetCode #127)
+- Binary Tree Level Order Traversal (LeetCode #102, Grind)
+- Rotting Oranges (LeetCode #994, Grind)
+- Word Ladder (LeetCode #127, Grind)
