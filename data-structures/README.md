@@ -8,8 +8,18 @@ There are two basic categories of data structures namely, linear and non-linear 
 
 ## Linear Data Structures
 
-These are sequential data structures
+These are sequential data structures. They include:
+
+1. Arrays
+2. Linked Lists
+3. Hashes
+4. Queues
+5. Stacks
 
 ## Non-linear Data Structures
 
-These are non-sequential data structures
+These are non-sequential data structures. They include:
+
+1. Trees
+2. Graphs
+3. Matrices

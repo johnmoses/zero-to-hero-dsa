@@ -29,6 +29,8 @@ In-place Reversal of a LinkedList pattern reverses parts of a linked list withou
 
 ## Problems
 
-- Reverse Linked List (LeetCode #206, Grind)
+- Reverse Linked List (LeetCode #206, Blind, Grind)
 - Reverse Linked List II (LeetCode #92)
-- Swap Nodes in Pairs (LeetCode #24)
+- Detect Cycle in a Linked List (LeetCode #141, Blind)
+- Merge two sorted lists (LeetCode #21, Blind)
+- Merge k-sorted lists (LeetCode #23, Blind)

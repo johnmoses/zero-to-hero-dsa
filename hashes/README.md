@@ -30,9 +30,8 @@ The key idea of Hash Table is to use a hash function to map keys to buckets. To 
 
 There are two basic keys to the design of hash tables
 
-### Hash Functions
-
-### Collision Resolution
+- Hash Functions
+- Collision Resolution
 
 ## Skip List
 

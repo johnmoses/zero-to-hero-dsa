@@ -40,3 +40,14 @@ The graph G has 4 vertices v and 3 edges e. It is represented pictorially as 4 l
 The Bellman-Ford algorithm is best suited to find the shortest paths in a directed graph, with one or more negative edge weights, from the source vertex to all other vertices.
 
 It does so by repeatedly checking all the edges in the graph for shorter paths, as many times as there are vertices in the graph (minus 1).
+
+## Problems
+
+- Clone graph (LeetCode #45, Blind)
+- Course Schedule (LeetCode #210, Blind)
+- Pacific Atlantic Water Flow (LeetCode #417, Blind)
+- Number of Islands (LeetCode #200, Blind)
+- Longest Consecutive Subsequence (LeetCode #128, Blind)
+- Alien Dictionary (LeetCode #269, Blind)
+- Graph Valid tree (LeetCode #261, Blind)
+- Number of connected components in an undirected graph (LeetCode #323, Blind)

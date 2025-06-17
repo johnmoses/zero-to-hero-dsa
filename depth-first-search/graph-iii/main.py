@@ -1,31 +1,28 @@
 """ 
-Graph Depth-first-search traversal
+Depth First Search on graph to find a target value.
+
+Example 1:
+    Input: 
+        graph = [[2,3,8],[1,7],[1,4,5],[2,6]]
+        target = 1
+    Output: 1
 """
-graph = {
-    'A': ['B', 'C'],
-    'B': ['A', 'D', 'E'],
-    'C': ['A', 'F'],
-    'D': ['B'],
-    'E': ['B', 'F'],
-    'F': ['C', 'E']
-}
-start = "E"
-target = "C"
+def dfs_search(graph, target, start=0):
+    visited = set()
 
-def dfs(graph, start, target, visited = None):
-    if visited is None:
-        visited = set()
-    
-    if start == target:
-        return True
-    visited.add(start)
+    def dfs_helper(node):
+        visited.add(node)
+        
+        if node == target:
+            return True
+            
+        for i in graph[node]:
+            if i not in visited:
+                if dfs_helper(i):
+                    return True
 
-    for i in graph[start]:
-        if i not in visited:
-            found = dfs(graph, i, target, visited)
-            if found:
-                return True
-    return False
-   
-res = dfs(graph, start, target)
-print(f"element {target} : {res}")
+        return False
+
+    return dfs_helper(start)
+
+print(dfs_search([[2,3,8],[1,7],[1,4,5],[2,6]], 1))

@@ -63,6 +63,27 @@ Red Black Trees are a type of balanced binary search tree that use a set of rule
 
 A binary tree is a rooted tree in which each node has no more than 2 children. Let's extend this definition to N-ary tree. If a tree is a rooted tree in which each node has no more than N children, it is called N-ary tree. Trie is one of the most frequently used N-ary trees.
 
+## Tries
+
+A Trie or prefix tree is a special form of a N-ary tree. Typically, a trie is used to store strings. Each Trie node represents a string (a prefix). Each node might have several children nodes while the paths to different children nodes represent different characters. And the strings the child nodes represent will be the origin string represented by the node itself plus the character on the path
+
 ## Heaps
 
 A Heap is a complete binary tree data structure that satisfies the heap property: for every node, the value of its children is greater than or equal to its own value. Heaps are usually used to implement priority queues, where the smallest (or largest) element is always at the root of the tree
+
+## Problems
+
+- Maximun depth of binary tree (LeetCode # 104, Blind)
+- Same Tree (LeetCode # 100, Blind)
+- Invert/Flip Binary Tree (LeetCode # 226, Blind)
+- Binary tree maximum path sum (LeetCode # 124, Blind)
+- Binary tree level order traversal (LeetCode # 102, Blind)
+- Serialize and Deserialize Binary Tree (LeetCode # 297, Blind)
+- Subtree of another tree (LeetCode # 572, Blind)
+- Construct Binary Tree from Preorder and Inorder Traversal (LeetCode # 105, Blind)
+- Validate Binary Search Tree (LeetCode # 98, Blind)
+- Kth Smallest Element in a BST (LeetCode # 230, Blind)
+- Lowest Common Ancestor of a Binary Search Tree (LeetCode # 235, Blind)
+- Implement Trie (Prefix Tree) (LeetCode # 208, Blind)
+- Add and search word (LeetCode # 211, Blind)
+- Word Search II (LeetCode # 212, Blind)

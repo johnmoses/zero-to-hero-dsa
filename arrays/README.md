@@ -30,3 +30,17 @@ Array length is the number of items an array currently holds while array capacit
 
 - Replace elements
 - Repeated deletions
+
+## Problems
+
+- Two Sum (Leetcode #1, Blind)
+- Best time to buy and sell stock (Leetcode #121, Blind)
+- Contains duplicate (Leetcode #217, Blind)
+- Maximum subarray (Leetcode #53, Blind)
+- Product of array except self (Leetcode #238, Blind)
+- Maximum product subarray (Leetcode #152, Blind)
+- Find minimum in rotated sorted array (Leetcode #153, Blind)
+- Search in rotated sorted array (Leetcode #33, Blind)
+- 3Sum (Leetcode #15, Blind)
+- 3Sum Closest (Leetcode #16)
+- Container with most water (Leetcode #11, Blind)

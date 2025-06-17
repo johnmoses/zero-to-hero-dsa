@@ -41,6 +41,7 @@ def find_subsets(nums):
     # Return the result
     return result
 
+
 def find_subsets2(nums):
     result = []
     subset = []

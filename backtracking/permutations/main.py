@@ -11,6 +11,7 @@ For each element, include it in the current permutation and recursively generate
 Backtrack when all permutations for a given path are generated.
 """
 def generate_permutations(nums):
+    result = []
     def backtrack(start):
         if start == len(nums):
             result.append(nums[:])
@@ -21,7 +22,6 @@ def generate_permutations(nums):
             backtrack(start + 1)
             nums[start], nums[i] = nums[i], nums[start]
             
-    result = []
     backtrack(0)
     return result
 

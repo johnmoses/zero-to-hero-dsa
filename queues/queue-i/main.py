@@ -41,8 +41,26 @@ class Queue:
     def __str__(self):
         return str(self.values)
 
+class Queue1:
+    def __init__(self):
+        self.values = []
 
-q = Queue()
+    def getSize(self):
+        return len(self.values)
+
+    def enqueue(self, val):
+        self.values.append(val)
+
+    def dequeue(self):
+        if len(self.values) == 0:
+            return 'Empty'
+        return self.values.pop()
+
+    def __str__(self):
+        return str(self.values)
+
+
+q = Queue1()
 
 q.enqueue('A')
 q.enqueue('B')
@@ -51,6 +69,6 @@ print("Queue: ", q)
 print("Size: ", q.getSize())
 print("Dequeue: ", q.dequeue())
 print("After deueue: ", q)
-print("Peek: ", q.peek())
-print("isEmpty: ", q.isEmpty())
+# print("Peek: ", q.peek())
+# print("isEmpty: ", q.isEmpty())
 print("Size: ", q.getSize())

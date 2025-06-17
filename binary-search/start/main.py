@@ -34,8 +34,6 @@ def binarySearch(nums: list[int], target: int) -> int:
     return -1
 
 def binarySearch1(nums: list[int], target: int) -> int:
-    if len(nums) == 0:
-        return - 1
     left, right = 0, len(nums) - 1
     while left <= right:
         mid = (left + right) // 2
@@ -44,7 +42,7 @@ def binarySearch1(nums: list[int], target: int) -> int:
         elif nums[mid] < target:
             left = mid + 1
         else:
-            right = mid + 1
+            right = mid - 1
     return -1
 
 print(binarySearch([-1,0,3,5,9,12], 9))

@@ -86,20 +86,18 @@ We will start with a simple example of fibonacci numbers. The two first Fibonacc
 
 ## Common Patterns for Data Structures and Algorithms
 
-1. Two Pointers: Arrays, Lists, Strings, Linked Lists
-2. Sliding Window: Arrays, Lists, Strings
-3. Prefix Sum: Cumulative, Subarray, Subsequence
-4. In-place Reversal: Linked List
-5. Monotonic Stack: Arrays, Strings, Numbers, Orders
-6. Sorts: Quick, Merge, Topological
-7. Top k Elements: Arrays, Heaps
-8. Binary Search: Arrays, Strings, Numbers
-9. DFS on Tree, Graph, Matrix
-10. BFS on Tree, Graph, Matrix
-11. Trie: Arrays, Strings
-12. Dijkstra, Bellman-Ford, Floyd-Warshall, Prim, Kruskal
-13. Back tracking: Subsets, Combinations, Permutations
-14. Dynamic Programming: Optimization, Sequences
-15. Overlapping Intervals: Ranges, Schedules, Gaps
-16. Bit Manipulation: Missing numbers
-17. Union Find
+- Back tracking: Subsets, Combinations, Permutations
+- Binary: Bit manipulation
+- Binary Search: Arrays, Strings, Numbers
+- BFS on Tree, Graph, Matrix
+- DFS on Tree, Graph, Matrix
+- Dynamic Programming: Optimization, Sequences
+- Greedy: Optimizing, Scheduling
+- Intervals: Arrays, Ranges, Schedules, Gaps
+- Prefix Sum: Cumulative, Subarray, Subsequence
+- Sliding Window: Arrays, Lists, Strings
+- Sorts: Quick, Merge, Topological
+- Strings
+- Top k Elements: Arrays, Heaps
+- Two Pointers: Arrays, Lists, Strings, Linked Lists
+- Union Find

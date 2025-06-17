@@ -38,12 +38,19 @@ Use this pattern for problems with overlapping subproblems and optimal substruct
 
 ## Problems
 
-- Climbing Stairs (LeetCode #70, Grind)
+- Climbing Stairs (LeetCode #70, Blind, Grind)
 - Maximum Subarray Sum (LeetCode #53, Grind)
-- Coin Change (LeetCode #322, Grind)
+- Coin Change (LeetCode #322, Blind, Grind)
 - Partition Equal Subset Sum (LeetCode #416, Grind)
+- House Robber (LeetCode #198, Blind)
+- House Robber II (LeetCode #213, Blind)
+- Longest Increasing Subsequence (LIS) (LeetCode #300, Blind)
+- Longest Common Subsequence (LeetCode #1143, Blind)
+- Unique Paths (LeetCode #62, Blind)
+- Word Break (LeetCode #139, Blind)
+- Combination Sum (LeetCode #39, Blind)
+- Decode Ways to Decode (LeetCode #91, Blind)
 - Fibonacci Sequence (LeetCode #509)
-- House Robber (LeetCode #198)
 - Edit Distance (LeetCode #72)
 - Matrix Chain Multiplication (LeetCode #354)
-- Longest Increasing Subsequence (LIS) (LeetCode #300)
+- Jump Game (LeetCode #55)

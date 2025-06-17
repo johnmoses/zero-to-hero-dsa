@@ -1,4 +1,4 @@
-# Matrix
+# Matrices
 
 Matrix or grid is a two-dimensional array arranged in rows and columns. It is commonly used to represent mathematical matrices and is fundamental in various fields like mathematics, computer graphics, and data processing. Matrices allow for efficient storage and manipulation of data in a structured format.
 
@@ -16,6 +16,10 @@ Use this pattern for problems involving traversing 2D grids or matrices horizont
 
 ## Problems
 
-Flood Fill (LeetCode #733)
-Number of Islands (LeetCode #200)
-Surrounded Regions (LeetCode #130)
+- Set Matrix zeroes (LeetCode #73, Blind)
+- Spiral matrix (LeetCode #54, Blind)
+- Rotate Image (LeetCode #48, Blind)
+- Word Search (LeetCode #79, Blind)
+- Flood Fill (LeetCode #733)
+- Number of Islands (LeetCode #200)
+- Surrounded Regions (LeetCode #130)

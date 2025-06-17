@@ -1,6 +1,6 @@
-# Bit Manipulation
+# Binary
 
-Bitwise algorithms refer to the use of bitwise operators to manipulate individual bits of data. Python provides a set of bitwise operators such as AND (&), OR (|), XOR (^), NOT (~), shift left (<<), and shift right (>>).
+Bitwise algorithms refer to the use of bitwise operators to manipulate individual bits of data. Python provides a set of bitwise operators such as AND (&), OR (|), XOR (^), NOT (~), NAND (~&), NOR (~|), and shift left (<<), and shift right (>>).
 
 Specifically, XOR has interesting properties that allow you to find a missing number in a list or add up 2 numbers without using the addition or subtraction operation.
 
@@ -10,8 +10,8 @@ A good example is manipulation of bits to detect errors (hamming code), encrypt 
 
 ## Problems
 
-- Number of 1 Bits (191)
-- Reverse Bits (190)
-- Missing Number (268)
-- Sum of Two Integers (371)
-- Counting Bits (338)
+- Number of 1 Bits (LeetCode #191, Blind)
+- Reverse Bits (LeetCode #190, Blind)
+- Missing Number (LeetCode #268, Blind)
+- Sum of Two Integers (LeetCode #371, Blind)
+- Counting Bits (LeetCode #338, Blind)

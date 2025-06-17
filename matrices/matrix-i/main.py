@@ -17,7 +17,23 @@ class Matrix:
         for row in self.values:
             print(row)
 
-matrix = Matrix(3, 3)
+class Matrix1:
+    def __init__(self, rows, cols):
+        self.rows = rows
+        self.cols = cols
+        self.values = [[0] * cols for _ in range(rows)]
+
+    def get(self, row, col):
+        return self.values[row][col]
+
+    def set(self, row, col, value):
+        self.values[row][col] = value
+
+    def display(self):
+        for row in self.values:
+            print(row)
+
+matrix = Matrix1(3, 3)
 matrix.set(0, 0, 1)
 matrix.set(1, 1, 2)
 matrix.set(2, 2, 3)
