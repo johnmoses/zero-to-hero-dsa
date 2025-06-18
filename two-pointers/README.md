@@ -20,9 +20,9 @@ This technique is used to iterate through a data set, typically an array or a li
 
 Two Pointers
 
-- Two Sum (LeetCode #1, Grind)
+- Two Sum (LeetCode #1, Grind, Blind)
 - 3Sum (LeetCode #15, Grind)
-- Container With Most Water (LeetCode #11, Grind)
+- Container With Most Water (LeetCode #11, Grind, Blind)
 
 Fast and Slow Pointers
 

@@ -29,7 +29,6 @@ Use this pattern for problems involving sorted or rotated arrays where you need 
 
 ## Modified Binary Search Problems
 
-- Search in Rotated Sorted Array (LeetCode #33, Grind)
-- Find Minimum in Rotated Sorted Array (LeetCode #153)
+- Search in Rotated Sorted Array (LeetCode #33, Grind, Blind)
+- Find Minimum in Rotated Sorted Array (LeetCode #153, Blind)
 - Search a 2D Matrix II (LeetCode #240)
-- Search in Rotated Sorted Array II (LeetCode #81)

@@ -13,15 +13,23 @@ Constraints:
 -109 <= nums[i] <= 109
 
 """
+
 from typing import List
 
-class Solution:
-    def containsDuplicate(self, nums: List[int]) -> bool:
-        duplicated = set(nums)
-        if len(duplicated) < len(nums):
-            return True
-        return False
 
-nums = [1,2,3,1]
-sn = Solution()
-print(sn.containsDuplicate(nums))
+def containsDuplicate(nums: List[int]) -> bool:
+    duplicated = set(nums)
+    if len(duplicated) < len(nums):
+        return True
+    return False
+
+def containsDuplicate1(nums: List[int]) -> bool:
+    duplicated = set(nums)
+    if len(duplicated) < len(nums):
+        return True
+    return False
+
+
+nums = [1, 2, 3, 1]
+print(containsDuplicate(nums))
+print(containsDuplicate1(nums))

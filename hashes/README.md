@@ -54,3 +54,11 @@ A multimap is a map when same key can be mapped to multiple values.
 ## Multisets
 
 A multiset is a set that allows duplicate values
+
+## Problems
+
+- Two sum (LeetCode #1, Grind, Blind)
+- Group anagrams (LeetCode #49, Blind)
+- Contains duplicate (LeetCode #217, Blind)
+- Valid anagrams (LeetCode #242, Blind)
+- Keyboard Row (LeetCode #500)

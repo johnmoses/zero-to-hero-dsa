@@ -13,10 +13,10 @@ The root of the heap will be the k-th largest element.
 """
 from heapq import heappush, heappop, nlargest
 
-def findKthLargest1(heap: list[int], k: int) -> int:
+def findKthLargest(heap: list[int], k: int) -> int:
     return nlargest(k, heap)[-1]
 
-def findKthLargest2(nums: list[int], k: int) -> int:
+def findKthLargest1(nums: list[int], k: int) -> int:
     # Use min heap to track k largest elements
     heap = []
     
@@ -28,5 +28,14 @@ def findKthLargest2(nums: list[int], k: int) -> int:
     # Root is kth largest element
     return heap[0]
 
+def findKthLargest2(nums: list[int], k: int) -> int:
+    heap = []
+    for num in nums:
+        heappush(heap, num)
+        if len(heap) > k:
+            heappop(heap)
+    return heap[0]
+
+print(findKthLargest([3, 2, 1, 5, 6, 4], 2))
 print(findKthLargest1([3, 2, 1, 5, 6, 4], 2))
 print(findKthLargest2([3, 2, 1, 5, 6, 4], 2))

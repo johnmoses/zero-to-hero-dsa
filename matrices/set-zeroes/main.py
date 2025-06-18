@@ -50,5 +50,6 @@ def setZeroes(matrix):
                 firstCol = True
                 break
         return firstRow, firstCol
+    return matrix
 
 print(setZeroes([[1,1,1],[1,0,1],[1,1,1]]))

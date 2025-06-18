@@ -1,25 +1,35 @@
 """
-Given a List of words, return the words that can be typed using letters of
-alphabet on only one row's of American keyboard.
+Given an array of strings words, return the words that can be typed using letters of the alphabet on only one row of American keyboard like the image below.
+Note that the strings are case-insensitive, both lowercased and uppercased of the same letter are treated as if they are at the same row.
 
-For example:
-Input: ["Hello", "Alaska", "Dad", "Peace"]
-Output: ["Alaska", "Dad"]
+In the American keyboard:
+
+the first row consists of the characters "qwertyuiop",
+the second row consists of the characters "asdfghjkl", and
+the third row consists of the characters "zxcvbnm".
+
+Example 1:
+    
+Input: words = ["Hello","Alaska","Dad","Peace"]
+Output: ["Alaska","Dad"]
+Explanation:
+Both "a" and "A" are in the 2nd row of the American keyboard due to case insensitivity.
+
+Example 2:
+
+Input: words = ["omk"]
+Output: []
 """
-
-words = ["Hello", "Alaska", "Dad", "Peace"]
-
 def find_keyboard_row(words):
-    keyboard = [
-        set('quertyuiop'),
-        set('asdfghjkl'),
-        set('zxcvbnm'),
-    ]
-    res = []
+    output = []
     for word in words:
-        for key in keyboard:
-            if set(word.lower()).issubset(key):
-                res.append(word)
-    return res
+        if set(word.lower()) <= set("qwertyuiop"):
+            output.append(word)
+        elif set(word.lower()) <= set("asdfghjkl"):
+            output.append(word)
+        elif set(word.lower()) <= set("zxcvbnm"):
+            output.append(word)
+    return output
 
-print(find_keyboard_row(words))
+print(find_keyboard_row(["Hello","Alaska","Dad","Peace"]))
+print(find_keyboard_row(["omk"]))
