@@ -30,3 +30,5 @@ This a queue based on a tree data structure. It is an improvement over priority 
 There are many ways of creating queues, popular ones include array, queues, deque queues, and linked list queues
 
 ## Problems
+
+- Implement Queue using stack (LeetCode #232, Grind)

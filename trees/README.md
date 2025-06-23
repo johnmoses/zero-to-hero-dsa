@@ -75,7 +75,8 @@ A Heap is a complete binary tree data structure that satisfies the heap property
 
 - Validate Binary Search Tree (LeetCode # 98, Blind)
 - Same Tree (LeetCode # 100, Blind)
-- Binary tree level order traversal (LeetCode # 102, Blind)
+- Binary tree level order traversal (LeetCode # 102, Blind, Grind)
+
 - Maximun depth of binary tree (LeetCode # 104, Blind)
 - Construct Binary Tree from Preorder and Inorder Traversal (LeetCode # 105, Blind)
 - Binary tree maximum path sum (LeetCode # 124, Blind)

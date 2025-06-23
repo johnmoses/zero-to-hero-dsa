@@ -37,5 +37,5 @@ Topological sorting for Directed Acyclic Graph (DAG) is a linear ordering of ver
 Problems
 
 - Course Schedule (Leetcode #207, Grind)
-- Task Scheduler (Leetcode #621, Grind)
 - Course Schedule II (Leetcode #210)
+- Task Scheduler (Leetcode #621, Grind)

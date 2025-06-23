@@ -12,7 +12,8 @@ Use this pattern when you need to find all (or some) solutions to a problem that
 
 ## Problems
 
-- Subsets (LeetCode #78, Grind)
 - Permutations (LeetCode #46, Grind)
 - Combinations (LeetCode #77)
+- Subsets (LeetCode #78, Grind)
+
 - N-Queens (LeetCode #51)

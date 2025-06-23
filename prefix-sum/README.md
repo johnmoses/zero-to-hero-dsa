@@ -19,6 +19,8 @@ A subarray sum would take O(N). A Q subarrays sum would take O(N*Q)
 
 ## Problems
 
+- Subarray Sum
+
 - Range Sum Query — Immutable (LeetCode #303)
 - Contiguous Array (LeetCode #525)
 - Subarray Sum Equals K (LeetCode #560)

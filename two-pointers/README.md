@@ -21,11 +21,12 @@ This technique is used to iterate through a data set, typically an array or a li
 Two Pointers
 
 - Two Sum (LeetCode #1, Grind, Blind)
-- 3Sum (LeetCode #15, Grind)
 - Container With Most Water (LeetCode #11, Grind, Blind)
+- 3Sum (LeetCode #15, Grind)
 
 Fast and Slow Pointers
 
 - Linked List Cycle (LeetCode #141, Grind)
 - Happy Number (LeetCode #202)
+
 - Find the Duplicate Number (LeetCode #287)

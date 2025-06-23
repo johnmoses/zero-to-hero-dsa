@@ -12,9 +12,11 @@ Sliding window problems are very easy to solve using a brute force approach in O
 
 - When dealing with problems involving contiguous sub-arrays or sub-strings
 
-## Sample problems
+## Problems
 
+- Length of longest substring that does not contain vowels
 - Longest Substring Without Repeating Characters (LeetCode #3, Grind, Blind)
+
 - Minimum Window Substring (LeetCode #76, Grind, Blind)
 - Find All Anagrams in a String (LeetCode #438, Grind)
 - Maximum Average Subarray I (LeetCode #643)

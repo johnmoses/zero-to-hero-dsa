@@ -30,8 +30,11 @@ It is like a regular stack with one key distinction in the push operation: Befor
 
 ## Problems
 
-- Reverse String (Leetcode #344)
 - Valid Parenthesis (Leetcode #20 Grind)
+- Largest Rectangle in Histogram (Leetcode #84, Grind)
+- Reverse String (Leetcode #344)
+- Next Greater Element I (Leetcode #496)
+
 - Evaluate Reverse Polish Notation (Leetcode #150)
 - Min Stack (Leetcode #155)
 - Daily Temperatures (Leetcode #739)

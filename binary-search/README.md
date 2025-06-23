@@ -25,9 +25,7 @@ Looking at binary search coding patterns, three templates can be deduced. This i
 
 Modified Binary Search pattern adapts binary search to solve a wider range of problems, such as finding elements in rotated sorted arrays.
 
-Use this pattern for problems involving sorted or rotated arrays where you need to find a specific element.
-
-## Modified Binary Search Problems
+## Problems
 
 - Search in Rotated Sorted Array (LeetCode #33, Grind, Blind)
 - Find Minimum in Rotated Sorted Array (LeetCode #153, Blind)

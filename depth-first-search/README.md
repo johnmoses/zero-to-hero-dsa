@@ -12,8 +12,9 @@ Use it when exploring all paths or branches in graphs or trees
 
 ## Problems
 
-- Clone Graph (LeetCode #133, Grind)
-- Number of Islands (LeetCode #200, Grind)
-- Binary Tree Maximum Path Sum (LeetCode #124)
 - Binary Tree Path Sum II (LeetCode #113)
+- Binary Tree Maximum Path Sum (LeetCode #124)
+- Clone Graph (LeetCode #133, Grind)
+
+- Number of Islands (LeetCode #200, Grind)
 - Course Schedule II (LeetCode #210)

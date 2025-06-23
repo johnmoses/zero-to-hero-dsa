@@ -10,8 +10,9 @@ A good example is manipulation of bits to detect errors (hamming code), encrypt 
 
 ## Problems
 
-- Number of 1 Bits (LeetCode #191, Blind)
 - Reverse Bits (LeetCode #190, Blind)
+- Number of 1 Bits (LeetCode #191, Blind)
 - Missing Number (LeetCode #268, Blind)
+
 - Sum of Two Integers (LeetCode #371, Blind)
 - Counting Bits (LeetCode #338, Blind)

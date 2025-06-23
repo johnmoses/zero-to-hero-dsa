@@ -58,7 +58,8 @@ A multiset is a set that allows duplicate values
 ## Problems
 
 - Two sum (LeetCode #1, Grind, Blind)
-- Group anagrams (LeetCode #49, Blind)
 - Contains duplicate (LeetCode #217, Blind)
-- Valid anagrams (LeetCode #242, Blind)
+- Valid anagrams (LeetCode #242, Blind, Grind)
 - Keyboard Row (LeetCode #500)
+
+- Group anagrams (LeetCode #49, Blind)

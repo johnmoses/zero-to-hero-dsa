@@ -6,6 +6,7 @@ In an interval array sorted by start time, two intervals [a, b] and [c, d] overl
 
 - Merge Intervals (LeetCode #56, Blind, Grind)
 - Insert Interval (LeetCode #57, Blind, Grind)
+
 - Meeting Rooms (LeetCode #252, Blind)
 - Meeting Rooms II (LeetCode #253, Blind)
 - Non-Overlapping Intervals (LeetCode #435, Blind)

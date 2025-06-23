@@ -53,6 +53,9 @@ print('Pop at 0: ', arr)
 arr.sort()
 print('Sort: ', arr)
 
+# Search item
+print('Index of 5: ', arr.index(5))
+
 # Reverse order
 arr.reverse()
 print('Reverse: ', arr)
