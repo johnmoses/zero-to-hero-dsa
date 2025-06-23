@@ -58,8 +58,8 @@ print('Traversing')
 # Loop through each row
 for row in matrix:
     # Traversing each element in the current row
-    for x in row:
-        print(x, end=" ")
+    for col in row:
+        print(col, end=" ")
     print()
     
 # Creating a 2d matrix with initial values, say zeroes

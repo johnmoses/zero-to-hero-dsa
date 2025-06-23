@@ -17,9 +17,10 @@ Use this pattern for problems involving traversing 2D grids or matrices horizont
 ## Problems
 
 - Set Matrix zeroes (LeetCode #73, Blind)
+- Flood Fill (LeetCode #733)
+
 - Spiral matrix (LeetCode #54, Blind)
 - Rotate Image (LeetCode #48, Blind)
 - Word Search (LeetCode #79, Blind)
-- Flood Fill (LeetCode #733)
 - Number of Islands (LeetCode #200)
 - Surrounded Regions (LeetCode #130)
