@@ -25,12 +25,12 @@ def subsets(nums):
     result = []
     subset = []
     
-    def backtrack(index):
+    def backtrack(start):
         # Base case - add current subset copy to result 
-        result.append(subset[:])
+        result.append(nums[:])
         
         # Try including each remaining element
-        for i in range(index, len(nums)):
+        for i in range(start, len(nums)):
             # Add the element
             subset.append(nums[i])
             # Move onto the next element
@@ -46,9 +46,9 @@ def subsets(nums):
 def subsets2(nums):
     result = []
     subset = []
-    def backtrack(index):
-        result.append(subset[:])
-        for i in range(index, len(nums)):
+    def backtrack(start):
+        result.append(nums[:])
+        for i in range(start, len(nums)):
             subset.append(nums[i])
             backtrack(i + 1)
             subset.pop()

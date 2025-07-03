@@ -11,18 +11,25 @@ For each element, include it in the current permutation and recursively generate
 Backtrack when all permutations for a given path are generated.
 """
 def permute(nums):
+    # Define result array
     result = []
+
     def backtrack(start):
+        # Base case: add all elements to result if number of elements is not zero
         if start == len(nums):
             result.append(nums[:])
             return
-            
+
+        # Iterate and include each element
         for i in range(start, len(nums)):
             nums[start], nums[i] = nums[i], nums[start]
+            # Move to next element
             backtrack(start + 1)
             nums[start], nums[i] = nums[i], nums[start]
-            
+    
+    # Start at first element of array
     backtrack(0)
+    # Return result
     return result
 
 def permute1(nums):
