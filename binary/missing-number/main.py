@@ -39,4 +39,13 @@ def missingNumber(nums: List[int]) -> int:
         res ^= num
     return res
 
+def missingNumber1(nums: List[int]) -> int:
+    res, n = 0, len(nums)
+    for i in range(1, n + 1):
+        res ^= i
+    for num in nums:
+        res ^= num
+    return res
+
 print(missingNumber([3,0,1]))
+print(missingNumber1([3,0,1]))

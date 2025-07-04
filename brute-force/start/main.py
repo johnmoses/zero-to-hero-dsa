@@ -22,4 +22,12 @@ def find_pair_sums(nums: list[int], target: int) -> list[int]:
     # Return empty list if no solution found        
     return []
 
+def find_pair_sums1(nums: list[int], target: int) -> list[int]:
+    for i in range(len(nums)):
+        for j in range(i + 1, len(nums)):
+            if nums[i] + nums[j] == target:
+                return [i, j]
+    return []
+
 print(find_pair_sums([2, 7, 11, 15], 9))
+print(find_pair_sums1([2, 7, 11, 15], 9))
