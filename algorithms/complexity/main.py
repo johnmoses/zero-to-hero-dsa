@@ -9,7 +9,7 @@ def constant_time(lst):
     """O(1) - Constant time complexity"""
     return lst[0] if lst else None
 
-print(constant_time(lst))
+print('Constant time: ', constant_time(lst))
 
 def linear_time(lst):
     """O(n) - Linear time complexity"""
@@ -18,7 +18,7 @@ def linear_time(lst):
         total += item
     return total
 
-print(linear_time(lst))
+print('Linear time: ', linear_time(lst))
 
 def quadratic_time(lst):
     """O(n^2) - Quadratic time complexity"""
@@ -29,7 +29,7 @@ def quadratic_time(lst):
             pairs.append((i,j))
     return pairs
 
-print(quadratic_time(lst))
+print('Quadratic time: ', quadratic_time(lst))
 
 def binary_search(lst, target):
     """O(log n) - Logarithmic time complexity"""
@@ -42,9 +42,9 @@ def binary_search(lst, target):
             left = mid + 1
         else: 
             right = mid - 1
-
     return -1
-print(binary_search(lst, 3))
+
+print('Logarithmic time: ', binary_search(lst, 3))
 
 def merge_sort(lst):
     """O(n log n) - Log-linear time complexity"""
@@ -71,7 +71,7 @@ def merge(left, right):
     result.extend(right[j:])
     return result
 
-print(merge_sort(lst))
+# print('Log-linear time: ', merge_sort(lst))
 
 def exponential_time(lst):
     """O(2^n) - Exponential time complexity"""
@@ -79,7 +79,7 @@ def exponential_time(lst):
         return []
     return [lst] + exponential_time(lst + lst)
 
-print(exponential_time(lst))
+# print('Exponential time: ', exponential_time(lst))
 
 def polynomial_time(lst):
     """O(n!) - Polynomial time complexity"""
@@ -87,7 +87,7 @@ def polynomial_time(lst):
         return []
     return [lst] + polynomial_time(lst + lst)
 
-print(polynomial_time(lst))
+# print('Polynomial time: ', polynomial_time(lst))
 
 def factorial_time(lst):
     """O(n!) - Factorial time complexity"""
@@ -95,7 +95,7 @@ def factorial_time(lst):
         return []
     return [lst] + factorial_time(lst + lst)
 
-print(factorial_time(lst))
+print('Factorial time: ', factorial_time(lst))
 
 def fibonacci_time(n):
     """O(2^n) - Fibonacci time complexity"""
@@ -105,4 +105,4 @@ def fibonacci_time(n):
         return 1
     return fibonacci_time(n-1) + fibonacci_time(n-2)
 
-print(fibonacci_time(3))
+print('Fibonacci time: ', fibonacci_time(3))

@@ -38,11 +38,13 @@ Average Case: The expected scenario, considering all possible inputs.
 
 Space complexity measures the amount of memory an algorithm uses as a function of the input size.
 
-- Big O Notation for Space Complexity: Just like time complexity, space complexity can be expressed in Big O notation.
-  O(1): Constant space. The algorithm uses a fixed amount of memory regardless of input size. Example: Variables storing sums or counters.
+Big O Notation for Space Complexity: Just like time complexity, space complexity can be expressed in Big O notation.
+
+- O(1): Constant space. The algorithm uses a fixed amount of memory regardless of input size. Example: Variables storing sums or counters.
 
 - O(n): Linear space. The memory usage grows linearly with the input size. Example: Storing an additional array or list.
-  O(n²): Quadratic space. The memory usage grows quadratically with the input size. Example: Storing a 2D matrix.
+
+- O(n²): Quadratic space. The memory usage grows quadratically with the input size. Example: Storing a 2D matrix.
 
 ## Extra space
 
