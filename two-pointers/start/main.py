@@ -41,5 +41,18 @@ def find_two_sum2(nums: list[int], target:int) -> list[int]:
             right -= 1
     return []
 
+def find_two_sum3(nums, target):
+    left, right = 0, len(nums) - 1
+    while left < right:
+        current_sum = nums[left] + nums[right]
+        if current_sum == target:
+            return [left, right]
+        elif current_sum < target:
+            left += 1
+        else:
+            right -= 1
+    return []
+
 print(find_two_sum([1, 2, 3, 4, 6], 6))
 print(find_two_sum2([1, 2, 3, 4, 6], 6))
+print(find_two_sum3([1, 2, 3, 4, 6], 6))

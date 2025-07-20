@@ -94,13 +94,15 @@ We will start with a simple example of fibonacci numbers. The two first Fibonacc
 - Dynamic Programming: Optimization, Sequences
 - Fast and slow pointers: Arrays, Lists, Strings, Linked Lists
 - Greedy: Optimizing, Scheduling
-- Merge Intervals: Arrays, Ranges, Schedules, Gaps
+- Intervals: Arrays, Ranges, Schedules, Gaps
+- Knapsack: Optimization, Sequences
 - Linked List Reversal: Singly, Doubly, Circular
 - Monotonic stack: Arrays, Lists, Strings
 - Prefix Sum: Cumulative, Subarray, Subsequence
 - Sliding Window: Arrays, Lists, Strings
-- Sorts: Quick, Merge, Topological
+- Sorts: Quick, Merge, Topological, Cyclic
 - Strings:
+- Math:
 - Top k Elements: Arrays, Heaps
 - Topological Sort: Graphs
 - Trie: Strings, Search

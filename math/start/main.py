@@ -42,6 +42,20 @@ def power_of_number(base, exponent):
 
 print('Power of number: ', power_of_number(2, 3))
 
+def power_of_number1(base, exp, mod=None):
+    result = 1
+    base = base % mod if mod else base
+    
+    while exp > 0:
+        if exp % 2 == 1:
+            result = (result * base) % mod if mod else result * base
+        exp = exp // 2
+        base = (base * base) % mod if mod else base * base
+    
+    return result
+
+print('Power of number 1: ', power_of_number1(2, 3, 5))
+
 def absolute_value(number):
     """Get absolute value"""
     return abs(number)
@@ -145,3 +159,17 @@ def is_perfect_cube(n):
     return int(n ** (1/3)) ** 3 == n
 
 print('Is perfect cube: ', is_perfect_cube(27))
+
+def sieve_of_eratosthenes(n):
+    primes = [True] * (n + 1)
+    primes[0] = primes[1] = False
+    
+    for i in range(2, int(n ** 0.5) + 1):
+        if primes[i]:
+            for j in range(i * i, n + 1, i):
+                primes[j] = False
+    
+    return [i for i in range(2, n + 1) if primes[i]]
+
+print('Sieve of Eratosthenes: ', sieve_of_eratosthenes(10))
+

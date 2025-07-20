@@ -9,9 +9,6 @@ Try to come up as many solutions as you can,
 there are at least 3 different ways to solve this problem.
 """
 
-nums = [1,2,3,4,5,6,7]
-k = 3
-
 def rotate1(nums, k):
     """
     Do not return anything, modify aray in-place
@@ -24,14 +21,4 @@ def rotate1(nums, k):
     nums[:] = a
     print(a)
 
-rotate1(nums, k)
-
-def rotate2(nums, k):
-    if nums is None:
-        return None
-
-    n = len(nums)
-    k = k % n
-    return nums[n - k:] + nums[:n - k]
-
-print(rotate2(nums,k))
+rotate1([1,2,3,4,5,6,7], 3)
