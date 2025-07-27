@@ -14,7 +14,9 @@ If the sum equals the target, return the indices.
 If the sum is less than the target, move the left pointer to the right.
 If the sum is greater than the target, move the right pointer to the left.
 """
-def find_two_sum(nums: list[int], target: int) -> list[int]:
+from typing import List
+
+def find_two_sum(nums: List[int], target: int) -> List[int]:
     # Use two pointers to find pair summing to target
     left, right = 0, len(nums) - 1
     
@@ -29,7 +31,7 @@ def find_two_sum(nums: list[int], target: int) -> list[int]:
             
     return []  # No solution found
 
-def find_two_sum2(nums: list[int], target:int) -> list[int]:
+def find_two_sum2(nums: List[int], target:int) -> List[int]:
     left, right = 0, len(nums) -1
     while left < right:
         curr_sum = nums[left] + nums[right]

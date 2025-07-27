@@ -12,6 +12,8 @@ Some of the search algorithms are as follows:
 6. Ternary Search
 7. Fibonacci Search
 8. Meta Search
+9. Breadth first search
+10. Depth first search
 
 ## Linear Search
 

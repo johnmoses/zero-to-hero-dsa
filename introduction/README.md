@@ -13,8 +13,8 @@ There are two basic categories of data structures namely, linear and non-linear 
 These are sequential data structures. They include:
 
 1. Arrays
-2. Linked Lists
-3. Hashes
+2. Hashes
+3. Linked Lists
 4. Queues
 5. Stacks
 
@@ -125,14 +125,14 @@ We will start with a simple example of fibonacci numbers. The two first Fibonacc
 - Intervals: Arrays, Ranges, Schedules, Gaps
 - Knapsack: Optimization, Sequences
 - Linked List Reversal: Singly, Doubly, Circular
+- Math:
 - Monotonic stack: Arrays, Lists, Strings
 - Prefix Sum: Cumulative, Subarray, Subsequence
+- Searches: 
 - Sliding Window: Arrays, Lists, Strings
 - Sorts: Quick, Merge, Topological, Cyclic
 - Strings:
-- Math:
 - Top k Elements: Arrays, Heaps
-- Topological Sort: Graphs
 - Trie: Strings, Search
 - Two Pointers: Arrays, Lists, Strings, Linked Lists
 - Union Find
