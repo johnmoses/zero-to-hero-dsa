@@ -30,12 +30,12 @@ from typing import List
 
 
 def twoSum(nums: List[int], target: int) -> List[int]:
-    d = {}
+    dct = {}
     for i, j in enumerate(nums):
         r = target - j
-        if r in d:
-            return [d[r], i]
-        d[j] = i
+        if r in dct:
+            return [dct[r], i]
+        dct[j] = i
 
 print(twoSum([2,7,11,15], 9))
 print(twoSum([3,2,4], 6))

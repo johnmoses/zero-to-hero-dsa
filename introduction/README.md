@@ -119,6 +119,7 @@ We will start with a simple example of fibonacci numbers. The two first Fibonacc
 - Binary Search: Arrays, Strings, Numbers
 - BFS on Tree, Graph, Matrix
 - DFS on Tree, Graph, Matrix
+- Divide and Conquer
 - Dynamic Programming: Optimization, Sequences
 - Fast and slow pointers: Arrays, Lists, Strings, Linked Lists
 - Greedy: Optimizing, Scheduling

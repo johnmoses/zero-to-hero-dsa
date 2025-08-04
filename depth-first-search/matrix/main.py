@@ -11,9 +11,9 @@ Input: matrix = [
     [7, 8, 9]
 ]
 
-Output: 1 2 3 4 8 12 11 10 9 5 6 7
+Output: [1, 4, 7, 8, 5, 2, 3, 6, 9]
 """
-def dfs_matrix(matrix):
+def search_matrix(matrix):
     if not matrix or not matrix[0]:
         return []
     
@@ -37,7 +37,7 @@ def dfs_matrix(matrix):
     dfs(0, 0)
     return result
 
-print(dfs_matrix([
+print(search_matrix([
     [1, 2, 3],
     [4, 5, 6],
     [7, 8, 9]

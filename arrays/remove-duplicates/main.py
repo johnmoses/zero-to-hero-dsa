@@ -15,9 +15,9 @@ def removeDuplicates1(arr):
 def removeDuplicates2(arr):
     # Define an array res to store the result
     res = []
-
     # Iterate over array
     for i in arr:
+        # Find items i not in res
         if i not in res:
             # Append i to res if not already there
             res.append(i)

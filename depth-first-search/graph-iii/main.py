@@ -7,10 +7,10 @@ Example 1:
         target = 1
     Output: 1
 """
-def dfs_search(graph, target, start=0):
+def dfs(graph, target, start=0):
     visited = set()
 
-    def dfs_helper(node):
+    def helper(node):
         visited.add(node)
         
         if node == target:
@@ -18,11 +18,11 @@ def dfs_search(graph, target, start=0):
             
         for i in graph[node]:
             if i not in visited:
-                if dfs_helper(i):
+                if helper(i):
                     return True
 
         return False
 
-    return dfs_helper(start)
+    return helper(start)
 
-print(dfs_search([[2,3,8],[1,7],[1,4,5],[2,6]], 1))
+print(dfs([[2,3,8],[1,7],[1,4,5],[2,6]], 1))
