@@ -28,7 +28,6 @@ def subsets(nums):
     def backtrack(start):
         # Base case - add current subset copy to result 
         result.append(nums[:])
-        
         # Try including each remaining element
         for i in range(start, len(nums)):
             # Add the element
@@ -41,19 +40,5 @@ def subsets(nums):
     backtrack(0)
     # Return the result
     return result
-
-
-def subsets2(nums):
-    result = []
-    subset = []
-    def backtrack(start):
-        result.append(nums[:])
-        for i in range(start, len(nums)):
-            subset.append(nums[i])
-            backtrack(i + 1)
-            subset.pop()
-    backtrack(0)
-    return result
     
-print(subsets([1, 2, 3]))
-print(subsets2([1, 2, 3]))
+# print(subsets([1, 2, 3]))

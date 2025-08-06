@@ -37,19 +37,6 @@ def dfs1(root):
             stack.append(node.left)
     return result
 
-def dfs2(root):
-    if not root:
-        return []
-    stack, result = [root], []
-    while stack:
-        node = stack.pop()
-        result.append(node.val)
-        if node.left:
-            stack.append(node.left)
-        if node.right:
-            stack.append(node.right)
-    return result
 
 print(dfs(TreeNode(1, None, TreeNode(2, TreeNode(3), None))))
 print(dfs1(TreeNode(1, None, TreeNode(2, TreeNode(3), None))))
-print(dfs2(TreeNode(1, None, TreeNode(2, TreeNode(3), None))))
