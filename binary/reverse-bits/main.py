@@ -35,14 +35,5 @@ def reverseBits1(n: int) -> int:
         power -= 1
     return ret
 
-def reverseBits2(n: int) -> int:
-    ret, power = 0, 31
-    while n:
-        ret += (n & 1) << power
-        n = n >> 1
-        power -= 1
-    return ret
-
 print(reverseBits(43261596))
 print(reverseBits1(43261596))
-print(reverseBits2(43261596))

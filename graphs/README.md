@@ -2,6 +2,8 @@
 
 A graph is a set of objects called `vertices`, together with a collection of pairwise connections between them called `edges`. It is a way or representing relationships between pairs of objects.
 
+It is a data structure that describes relationships. For example in a social graph, we can tell that 'A' is a friend of 'B' and 'B' is a friend of 'C.
+
 Practical examples of graphs are city maps, airline routes, electrical wiring mappings, link between web pages, relationship between students and courses, communication network diagram.
 
 The vertices are also called `nodes` while the edges are also called `arcs`. The edges can be described as `directed` if they are ordered and `undirected` if they are not ordered, and `unidirected` if all edges are undirected.

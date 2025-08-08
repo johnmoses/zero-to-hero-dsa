@@ -53,52 +53,7 @@ class Graph:
                     queue.append(i)
                     visited[i] = True
 
-class Graph1:
-    def __init__(self, size):
-        self.size = size
-        self.nodes = [''] * size
-        self.edges = [[0] * size for _ in range(size)]
-
-    def add_node(self, index, value):
-        if 0 <= index < self.size:
-            self.nodes[index] = value
-
-    def add_edge(self, u, v):
-        if 0 <= u < self.size:
-            self.edges[u][v] = 1
-            self.edges[v][u] = 1
-
-    def print_graph(self):
-        for row in self.edges:
-            print(''.join(map(str, row)))
-        for node, value in enumerate(self.nodes):
-            print(f'Node {node} {value}')
-
-    def check_visited(self, v, visited):
-        visited[v] = True
-        print(self.nodes[v], end=' ')
-        for i in range(self.size):
-            if self.edges[v][i] == 1 and not visited[i]:
-                self.check_visited(i, visited)
-
-    def dfs(self, start_node):
-        queue = self.nodes.index(start_node)
-        visited = [False] * self.size
-        self.check_visited(queue, visited)
-
-    def bfs(self, start_node):
-        queue = [self.nodes.index(start_node)]
-        visited = [False] * self.size
-        visited[queue[0]] = True
-        while queue:
-            current_node = queue.pop(0)
-            print(self.nodes[current_node], end=' ')
-            for i in range(self.size):
-                if self.edges[current_node] == 1 and not visited[i]:
-                    queue.append(i)
-                    visited[i] = True
-
-g = Graph1(7)
+g = Graph(7)
 g.add_node(0, 'A')
 g.add_node(1, 'B')
 g.add_node(2, 'C')

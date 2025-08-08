@@ -20,6 +20,9 @@ class HashMap:
         self.size = 10
         self.values = [[] for _ in range(self.size)]
 
+    def __str__(self):
+        return str(self.values)
+
     
     def _hash(self, key):
         # Simple hash function that maps key to index
@@ -64,14 +67,16 @@ class HashMap:
     def print_map(self):
         print(self.values)
 
-hash_map = HashMap()
-hash_map.add(1, 1)
-hash_map.add(2, 2)
-print(hash_map.get(1))  # Output: 1
-print(hash_map.get(3))  # Output: -1
-hash_map.add(2, 1)
-print(hash_map.get(2))  # Output: 1
-hash_map.remove(2)
-hash_map.add(3, 3)
-print(hash_map.get(2))  # Output: -1
-hash_map.print_map()
+
+hm = HashMap()
+hm.add(1, 1)
+hm.add(2, 2)
+print(hm.get(1))  # Output: 1
+print(hm.get(3))  # Output: -1
+hm.add(2, 1)
+print(hm.get(2))  # Output: 1
+hm.remove(2)
+hm.add(3, 3)
+print(hm.get(2))  # Output: -1
+hm.print_map()
+print(hm)

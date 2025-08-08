@@ -13,6 +13,7 @@ print("Queue: ", queue)
 # isEmpty
 isEmpty = not bool(queue)
 print("isEmpty: ", isEmpty)
+
 # Alternatively 
 print("isEmpty: ", len(queue) == 0)
 

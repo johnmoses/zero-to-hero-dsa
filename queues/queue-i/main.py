@@ -41,26 +41,8 @@ class Queue:
     def __str__(self):
         return str(self.values)
 
-class Queue1:
-    def __init__(self):
-        self.values = []
 
-    def getSize(self):
-        return len(self.values)
-
-    def enqueue(self, val):
-        self.values.append(val)
-
-    def dequeue(self):
-        if len(self.values) == 0:
-            return 'Empty'
-        return self.values.pop()
-
-    def __str__(self):
-        return str(self.values)
-
-
-q = Queue1()
+q = Queue()
 
 q.enqueue('A')
 q.enqueue('B')

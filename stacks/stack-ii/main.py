@@ -11,6 +11,9 @@ class Stack:
     def __len__(self):
         return len(self.values)
 
+    def __str__(self):
+        return str(self.values)
+
     # Get size
     def getSize(self):
         return len(self.values)
@@ -30,9 +33,6 @@ class Stack:
     # Remove an item
     def pop(self):
         return self.values.pop()
-
-    def __str__(self):
-        return str(self.values)
 
 s = Stack()
 s.push('A')

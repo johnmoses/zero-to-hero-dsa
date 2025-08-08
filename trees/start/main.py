@@ -30,23 +30,8 @@ c.right = g
 # Access values
 print("a.right.left.value:", a.right.left.value)
 
-# Traverse entire tree
-print('Traverse 1:')
-tree = []
-root = a
-nodes = []
-while root or nodes:
-    while root:
-        nodes.append(root)
-        root = root.left
-    root = nodes.pop()
-    tree.append(root.value)
-    root = root.right
-values = [str(i) + '->' for i in tree]
-print(values)
-
-# Traverse a selected root
-print('Traverse 2:')
+# Traverse example
+print('Traverse:')
 def traverse(root):
     if root is None:
         return

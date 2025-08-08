@@ -9,16 +9,17 @@ Try to come up as many solutions as you can,
 there are at least 3 different ways to solve this problem.
 """
 
-def rotate1(nums, k):
+def rotate(nums, k):
     """
     Do not return anything, modify aray in-place
     """
     n = len(nums)
-    a = [0] * n
+    arr = [0] * n
     for i in range(n):
-        a[(i + k) % n] = nums[i]
+        arr[(i + k) % n] = nums[i]
 
-    nums[:] = a
-    print(a)
+    nums[:] = arr
+    print(arr)
 
-rotate1([1,2,3,4,5,6,7], 3)
+
+rotate([1,2,3,4,5,6,7], 3)

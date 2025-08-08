@@ -8,7 +8,7 @@ class Node:
         self.value = value
         self.next = None
 
-# Instantiate Node
+# Create multiple instances of the node
 a = Node(20)
 b = Node(30)
 c = Node(40)

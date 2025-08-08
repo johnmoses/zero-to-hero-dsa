@@ -21,17 +21,8 @@ def sort2(nums):
             if nums[i] > nums[j]:
                 nums[i], nums[j] = nums[j], nums[i]
     return nums
-    
-def sort3(nums):
-    for i in range(len(nums)):
-        for j in range(i+1, len(nums)):
-            if nums[i] > nums[j]:
-                nums[i], nums[j] = nums[j], nums[i]
-    return nums
-
 
 
 print(sort1([1, 5, 2, 3, 4]))
 print(sort2([1, 5, 2, 3, 4]))
-print(sort3([1, 5, 2, 3, 4]))
 

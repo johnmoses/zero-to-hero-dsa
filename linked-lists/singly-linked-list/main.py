@@ -101,7 +101,8 @@ class LinkedList:
         current = self.head
         nodes = ''
         while current:
-            nodes += (str(current.value))
+            nodes += (str(current.value)) + ' -> '
+            current = current.next
         return nodes
 
 ll = LinkedList()
@@ -117,3 +118,4 @@ ll.delete_at_beginning()
 ll.delete_at_end()
 ll.delete_at_index(2)
 ll.display()
+print(ll)
