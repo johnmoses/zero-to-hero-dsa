@@ -41,10 +41,10 @@ def reverse_sublist(head: Optional[ListNode], m: int, n: int) -> Optional[ListNo
         prev_node.next = nxt_node
         nxt_node = cur_node.next
     
-    # current = dummy_node
-    # while current:
-    #     print(current.val, end=' -> ')
-    #     current = current.next
+    current = dummy_node
+    while current:
+        print(current.val, end=' -> ')
+        current = current.next
 
     return dummy_node.next
 

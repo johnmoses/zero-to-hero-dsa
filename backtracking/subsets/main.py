@@ -22,12 +22,17 @@ Constraints:
 All the numbers of nums are unique.
 """
 def subsets(nums):
+    """
+    Generate all possible subsets of the input array using backtracking.
+    Time Complexity: O(2^n)
+    Space Complexity: O(n)
+    """
     result = []
     subset = []
     
     def backtrack(start):
-        # Base case - add current subset copy to result 
-        result.append(nums[:])
+        # Add the current subset to result
+        result.append(subset[:])
         # Try including each remaining element
         for i in range(start, len(nums)):
             # Add the element
@@ -41,4 +46,4 @@ def subsets(nums):
     # Return the result
     return result
     
-# print(subsets([1, 2, 3]))
+print(subsets([1, 2, 3]))

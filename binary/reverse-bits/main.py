@@ -24,6 +24,16 @@ Follow up: If this function is called many times, how would you optimize it?
 
 
 def reverseBits(n: int) -> int:
+    """
+    Reverse bits using string manipulation.
+    Time Complexity: O(1) - always operates on 32 bits
+    Space Complexity: O(1)
+    
+    Args:
+        n: 32-bit unsigned integer
+    Returns:
+        Integer with reversed bits
+    """
     return int(bin(n)[2:].zfill(32)[::-1], 2)
 
 

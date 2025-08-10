@@ -4,7 +4,7 @@ Write a basic array queue data structure showing basic functionalities
 
 queue = []
 
-# Enqueue or insert item at the back
+# Enqueue, push or insert item at the back
 queue.append('A')
 queue.append('B')
 queue.append('C')
@@ -20,7 +20,7 @@ print("isEmpty: ", len(queue) == 0)
 # Size
 print("Size: ", len(queue))
 
-# Dequeue or remove item from front
+# Dequeue, pop or remove item from front
 element = queue.pop(0)
 print("Dequeue: ", element)
 print("After deueue: ", queue)

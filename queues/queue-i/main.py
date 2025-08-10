@@ -6,51 +6,80 @@ class Queue:
     """ 
     Initialize a queue and add some behavious
     """
-    # The constructor
     def __init__(self):
+        """
+        Initialize a queue
+        """
         self.values = []
 
-    # Acessor function
-    def __len__(self):
-        return len(self.values)
-    
-    # Get size
-    def getSize(self):
-        return len(self.values)
-    
-    # Check if empty
     def isEmpty(self):
+        """
+        Check if the queue is empty
+        """
         return len(self.values) == 0
-    
-    # Get front or peek item
-    def peek(self):
+
+    def size(self):
+        """
+        Return the size of the queue
+        """
+        return len(self.values)
+
+    def push(self, value):
+        """
+        Add a value to the queue
+        """
+        self.values.append(value)
+
+    def pop(self):
+        """
+        Remove a value from the queue
+        """
         if self.isEmpty():
-            return "Queue is empty"
-        return self.values[0]
-    
-    # Insert an item at the back
-    def enqueue(self, val):
-        self.values.append(val)
-    
-    # Remove an item from the front
-    def dequeue(self):
-        if self.isEmpty():
-            return "Queue is empty"
+            raise Exception("Queue is empty")
         return self.values.pop(0)
 
+    def peek(self):
+        """
+        Return the first value in the queue
+        """
+        if self.isEmpty():
+            raise Exception("Queue is empty")
+        return self.values[0]
+
+    def clear(self):
+        """
+        Clear the queue
+        """
+        self.values = []
+
+    def __len__(self):
+        """
+        Return the size of the queue
+        """
+        return len(self.values)
+
     def __str__(self):
+        """
+        Return the queue as a string
+        """
         return str(self.values)
 
 
 q = Queue()
 
-q.enqueue('A')
-q.enqueue('B')
-q.enqueue('C')
+q.push('A')
+q.push('B')
+q.push('C')
+q.push(1)
+q.push(2)
+q.push(3)
 print("Queue: ", q)
-print("Size: ", q.getSize())
-print("Dequeue: ", q.dequeue())
-print("After deueue: ", q)
-# print("Peek: ", q.peek())
-# print("isEmpty: ", q.isEmpty())
-print("Size: ", q.getSize())
+print("Size: ", q.size())
+print("Pop: ", q.pop())
+print("After pop: ", q)
+print("Peek: ", q.peek())
+print("isEmpty: ", q.isEmpty())
+print("Size: ", q.size())
+q.clear()
+print("After clear: ", q)
+print("isEmpty: ", q.isEmpty())

@@ -13,6 +13,10 @@ def removeDuplicates1(arr):
     return list({x for x in arr if not isinstance(x, bool)})
 
 def removeDuplicates2(arr):
+    # Define a list of a set of the arr to automatically remove duplicates
+    return list(set(arr))
+
+def removeDuplicates3(arr):
     # Define an array res to store the result
     res = []
     # Iterate over array
@@ -23,10 +27,6 @@ def removeDuplicates2(arr):
             res.append(i)
     return res
 
-def removeDuplicates3(arr):
-    # Define a list of a set of the arr to automatically remove duplicates
-    res = list(set(arr))
-    return res
 
 print(removeDuplicates1([1, 1 ,1 ,2 ,2 ,3 ,4 ,4 ,"hey", "hey", "hello", True, True]))
 print(removeDuplicates2([1, 1 ,1 ,2 ,2 ,3 ,4 ,4 ,"hey", "hey", "hello", True, True]))
