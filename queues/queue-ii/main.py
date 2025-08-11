@@ -5,52 +5,76 @@ Queue implementation with deque library
 from collections import deque
 
 class Queue:
+    """
+    Initialize queue and add some behavious
+    """
     def __init__(self):
+        """
+        Initialize queue
+        """
         self.values = deque()
 
     def __len__(self):
+        """
+        Lenght of queues
+        """
         return len(self.values)
 
-    # Get size
-    def getSize(self):
-        return len(self.values)
-
-    # Check if empty
     def isEmpty(self):
-        return len(self.values) == 0
+            """
+            Check if empty
+            """
+            return len(self.values) == 0
 
-    # Get front or peek item
+    def getSize(self):
+        """
+        Return the size of the queue
+        """
+        return len(self.values)
+
+    def push(self, val):
+        """
+        Add value to the queue
+        """
+        self.values.append(val)
+    
+    def pop(self):
+        """
+        Remove a value from queue
+        """
+        if self.isEmpty():
+            return "Queue is empty"
+        return self.values.pop()
+    
     def peek(self):
+        """
+        Return the first value in the queue
+        """
         if self.isEmpty():
             return "Queue is empty"
         return self.values[0]
 
-    # binary number support method
     def front(self):
+        """
+        Binary number method
+        """
         return self.values[-1]
 
-    # Insert an item
-    def enqueue(self, val):
-        self.values.append(val)
-    
-    # Remove an item
-    def dequeue(self):
-        if self.isEmpty():
-            return "Queue is empty"
-        return self.values.pop()
-
     def __str__(self):
+        """
+        Return the queue as a string
+        """
         return str(self.values)
 
 q = Queue()
 
-q.enqueue('A')
-q.enqueue('B')
-q.enqueue('C')
-print("Queue: ", q)
+q.push('A')
+q.push('B')
+q.push('C')
+print("Push: ", q)
 print("Size: ", q.getSize())
-print("Dequeue: ", q.dequeue())
-print("After dequeue: ", q)
+print("Pop: ", q.pop())
+print("After pop: ", q)
 print("Peek: ", q.peek())
 print("Front: ", q.front())
 print("isEmpty: ", q.isEmpty())

@@ -3,39 +3,57 @@ Linked list stack
 """
 
 class Node:
+    """
+    Initialize Node
+    """
     def __init__(self, value):
         self.value = value
         self.next = None
 
 class Stack:
+    """ 
+    Initialize a stack and add some behavious
+    """
     def __init__(self):
         self.head = None
         self.size = 0
     
-    # Get size
     def getSize(self):
+        """
+        Return the number of items in the stack
+        Time Complexity: O(1)
+        """
         return self.size
 
-    # Check if empty
     def isEmpty(self):
+        """
+        Check if the stack is empty
+        Time Complexity: O(1)
+        """
         return self.size == 0
     
-    # Get top or peek item
-    def top(self):
+    def peek(self):
+        """
+        Return the top item
+        """
         if self.isEmpty():
             return "Stack is empty"
         return self.head.value
     
-    # Insert an item
     def push(self, val):
+        """
+        Insert item
+        """
         node = Node(val)
         if self.head:
             node.next = self.head
         self.head = node
         self.size += 1
     
-    # Remove an item
     def pop(self):
+        """
+        Remove item
+        """
         if self.isEmpty():
             return "Stack is empty"
         node = self.head
@@ -43,8 +61,10 @@ class Stack:
         self.size -= 1
         return node.value
 
-    # Print stack
     def printStack(self):
+        """
+        Print stack
+        """
         temp = self.head
         while temp:
             print(temp.value, end=" ")
@@ -58,6 +78,6 @@ s.push('C')
 s.printStack()
 print('Size: ', s.getSize())
 print('Pop: ', s.pop())
-print('Top: ', s.top())
+print('Peek: ', s.peek())
 print("isEmpty: ", s.isEmpty())
 print('Size: ', s.getSize())
