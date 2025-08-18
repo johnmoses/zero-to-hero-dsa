@@ -54,9 +54,9 @@ class Queue:
             return "Queue is empty"
         return self.values[0]
 
-    def front(self):
+    def back(self):
         """
-        Binary number method
+        Return the last value in the queue
         """
         return self.values[-1]
 
@@ -76,6 +76,6 @@ print("Size: ", q.getSize())
 print("Pop: ", q.pop())
 print("After pop: ", q)
 print("Peek: ", q.peek())
-print("Front: ", q.front())
+print("Back: ", q.back())
 print("isEmpty: ", q.isEmpty())
 print("Size: ", q.getSize())

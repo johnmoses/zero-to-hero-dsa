@@ -36,14 +36,6 @@ def findMinSubarraySum1(arr, k):
         
     return min_sum
 
-def findMinSubarraySum2(arr, k):
-    curr_sum = sum(arr[:k])
-    min_sum = curr_sum
-    for i in range(k, len(arr)):
-        curr_sum = curr_sum + arr[i] - arr[i-k]
-        min_sum = min(min_sum, curr_sum)
-    return min_sum
 
 print(findMinSubarraySum([10, 4, 2, 5, 6, 3, 8, 1], 3))
 print(findMinSubarraySum1([10, 4, 2, 5, 6, 3, 8, 1], 3))
-print(findMinSubarraySum2([10, 4, 2, 5, 6, 3, 8, 1], 3))

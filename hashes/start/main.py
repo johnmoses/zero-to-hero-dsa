@@ -22,7 +22,12 @@ print('Deleted a: ', dct)  # Output: {'b': 2, 'c': 3}
 print("a" in dct)  # Output: False
 print("b" in dct)  # Output: True
 
-# Iterate over the dictionary
+# Iterate over items in the dictionary
+print('Items')
+for item in dct.items():
+    print('item: ', item)
+
+# Iterate over the keys and values dictionary
 print('Keys and values:')
 for key, value in dct.items():
     print(key, value)

@@ -40,11 +40,17 @@ class Queue:
 
     def peek(self):
         """
-        Return the first value in the queue
+        Return the first or front value in the queue
         """
         if self.isEmpty():
             raise Exception("Queue is empty")
         return self.values[0]
+    
+    def back(self):
+        """
+        Return the last value in the queue
+        """
+        return self.values[-1]
 
     def clear(self):
         """
@@ -78,6 +84,7 @@ print("Size: ", q.size())
 print("Pop: ", q.pop())
 print("After pop: ", q)
 print("Peek: ", q.peek())
+print("Back: ", q.back())
 print("isEmpty: ", q.isEmpty())
 print("Size: ", q.size())
 q.clear()

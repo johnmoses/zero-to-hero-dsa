@@ -39,20 +39,5 @@ def largest_rectangle_area(heights):
         
     return max_area
 
-def largest_rectangle_area1(heights):
-    stack = []
-    max_area = 0
-    heights.append(0)
-    for i in range(len(heights)):
-        start = i
-        while stack and stack[-1][1] > heights[i]:
-            index, height = stack.pop()
-            width = i - index
-            max_area = max(max_area, width * height)
-            start = index
-        stack.append((start, heights[i]))
-    return max_area
-
 
 print(largest_rectangle_area([2,1,5,6,2,3]))
-print(largest_rectangle_area1([2,1,5,6,2,3]))

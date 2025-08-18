@@ -18,9 +18,9 @@ from typing import List
 
 
 def containsDuplicate(nums: List[int]) -> bool:
-    # Create a set form the list to ensure no duplicate entries
+    # Create a set from the list to clean-up duplicate entries
     cleaned = set(nums)
-    # Check if length of cleaned is less than length of nums 
+    # Check if length of cleaned is less than length of original 
     if len(cleaned) < len(nums):
         return True
     return False

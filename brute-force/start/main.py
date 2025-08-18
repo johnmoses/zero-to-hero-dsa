@@ -10,16 +10,17 @@ Example:
 
 Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 """
-def find_pair_sums(nums: list[int], target: int) -> list[int]:
-    # Loop through each number
-    for i in range(len(nums)):
-        # Check remaining numbers 
-        for j in range(i + 1, len(nums)):
-            # Return indices if sum equals target
+def two_sum(nums, target):
+    """
+    The time complexity is O(n²) because for each element we check all subsequent elements. 
+    The space complexity is O(1) because we only use a few extra variables.
+    """
+    n = len(nums)
+    for i in range(n):
+        for j in range(i + 1, n):
             if nums[i] + nums[j] == target:
                 return [i, j]
-    
-    # Return empty list if no solution found        
     return []
 
-print(find_pair_sums([2, 7, 11, 15], 9))
+
+print(two_sum([2, 7, 11, 15], 9))

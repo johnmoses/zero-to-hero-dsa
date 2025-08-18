@@ -1,7 +1,7 @@
 """ 
 Write code to flatten a nested list.
 """
-def flatten_list1(nested_list):
+def flatten_list(nested_list):
     """
     Flatten a nested list into a single list.
 
@@ -19,7 +19,7 @@ def flatten_list1(nested_list):
         # Check if the current element is a list
         if isinstance(element, list):
             # If it is a list, recursively flatten it and extend the flattened list
-            flattened.extend(flatten_list1(element))
+            flattened.extend(flatten_list(element))
         else:
             # If it is not a list, append the element to the flattened list
             flattened.append(element)
@@ -27,4 +27,4 @@ def flatten_list1(nested_list):
     # Return the flattened list
     return flattened
 
-print(flatten_list1([[1, 2, 3], [4, 5, 6], [7, 8, 9]]))
+print(flatten_list([[1, 2, 3], [4, 5, 6], [7, 8, 9]]))

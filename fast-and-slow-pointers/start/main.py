@@ -31,5 +31,5 @@ def is_happy(n):
     
     return slow == 1
 
-print(is_happy(19))
-print(is_happy(2))
+print("Is 19 a happy number?", is_happy(19))
+print("Is 2 a happy number?", is_happy(2))

@@ -26,16 +26,22 @@ Constraints:
 from typing import List
 
 def combine(n: int, k: int) -> List[List[int]]:
+    # Define result array
     result = []
     def backtrack(start, curr):
+        # Base case
         if len(curr) == k:
             result.append(curr[:])
             return
+        # Iterate and include each element
         for i in range(start, n + 1):
             curr.append(i)
+            # Move to next element
             backtrack(i + 1, curr)
             curr.pop()
+    # Start at initial element and curr array
     backtrack(1, [])
+    # Return result
     return result
 
 print(combine(4, 2))

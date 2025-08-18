@@ -35,11 +35,3 @@ while current:
     current = current.next
 print(nodes)
 
-# Method 3
-current = a # Set first node as current
-nodes = []  # Variable to hold the values
-while current:
-    nodes.append(current.value)
-    current = current.next
-values = [str(i) + ' -> ' for i in nodes]
-print(values)

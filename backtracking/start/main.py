@@ -10,7 +10,9 @@ Use recursion to generate permutations.
 For each element, include it in the current permutation and recursively generate the remaining permutations.
 Backtrack when all permutations for a given path are generated.
 """
-def permute(nums):
+from typing import List
+
+def permute(nums: list) -> List[List[int]]:
     # Define result array
     result = []
     def backtrack(start):
@@ -28,5 +30,6 @@ def permute(nums):
     backtrack(0)
     # Return result
     return result
+
 
 print(permute([1, 2, 3]))

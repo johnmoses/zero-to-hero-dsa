@@ -132,26 +132,26 @@ class Graph:
 g = Graph(directed=False)
 
 # Nodes
-node1 = g.add_node(Node('A'))
-node2 = g.add_node(Node('B'))
-node3 = g.add_node(Node('C'))
-node4 = g.add_node(Node('D'))
-node5 = g.add_node(Node('E'))
+nodea = g.add_node(Node('A'))
+nodeb = g.add_node(Node('B'))
+nodec = g.add_node(Node('C'))
+noded = g.add_node(Node('D'))
+nodee = g.add_node(Node('E'))
 
 # Edges
 edges = [
-    (node1, node2),  # A - B
-    (node1, node3),  # A - C
-    (node2, node4),  # B - C
-    (node2, node5),  # B - E),
-    (node3, node5),   # C - E
-    (node4, node5)
+    (nodea, nodeb),  # A - B
+    (nodeb, nodec),  # A - C
+    (nodec, noded),  # B - C
+    (noded, nodeb),  # B - E),
+    (noded, nodeb),   # C - E
+    (nodeb, nodee)
 ]
 
 for from_node, to_node in edges:
     g.add_edge(from_node, to_node)
 
-print("Graph Structure:")
+print("Undirected graph Structure:")
 g.print_graph()
 
 print("DFS Traversal from A:", g.dfs(Node('A')))  # ['A', 'B', 'C', 'D']")
@@ -182,5 +182,7 @@ for from_node, to_node in directed_edges:
 
 print("\nDirected graph structure:")
 dg.print_graph()
+
 print("\nDFS Traversal from Node 1:", dg.dfs(node1))  # [1, 2, 3, 4, 5]
+print("BFS Traversal from Node 1:", dg.bfs(node1)) 
 print("Path from Node 1 to Node 5:", dg.has_path(node1, node5))  # True
