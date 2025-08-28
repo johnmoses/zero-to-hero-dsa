@@ -9,7 +9,7 @@ class Node {
     }
 }
 
-public class CycleDetection {
+class CycleDetection {
 
     public static boolean detectCycle(Node head) {
         Node slow = head, fast = head;

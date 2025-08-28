@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class GraphIntro {
+class GraphIntro {
     public static void main(String[] args) {
         Map<String, List<String>> graph = new HashMap<>();
         graph.put("A", Arrays.asList("B", "C"));

@@ -1,7 +1,7 @@
 // Advanced Data Structures 2 - Intro Java example
 // Bit manipulation: Counting set bits
 
-public class Main {
+class Main {
     public static int countSetBits(int n) {
         int count = 0;
         while (n != 0) {

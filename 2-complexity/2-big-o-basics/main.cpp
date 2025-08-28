@@ -4,7 +4,7 @@
 #include <vector>
 
 int constant_time(const std::vector<int>& items) {
-    return items;  // O(1)
+    return items.empty() ? 0 : items[0];  // O(1)
 }
 
 int logarithmic_time(int n) {

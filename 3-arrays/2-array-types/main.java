@@ -1,6 +1,6 @@
 // Array Types - Java Example
 
-public class ArrayTypes {
+class ArrayTypes {
 
     public static void main(String[] args) {
         // 1D array

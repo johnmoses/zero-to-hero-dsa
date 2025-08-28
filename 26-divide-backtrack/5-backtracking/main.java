@@ -2,7 +2,7 @@
 
 import java.util.HashSet;
 
-public class Main {
+class Main {
     static int solutions = 0;
 
     public static boolean isNotUnderAttack(int row, int col, HashSet<Integer> cols,

@@ -1,6 +1,6 @@
 // Constraint Satisfaction - Java example (Sudoku solver)
 
-public class Main {
+class Main {
     public static boolean isValid(int[][] board, int row, int col, int num) {
         for (int i = 0; i < 9; i++) {
             if (board[row][i] == num || board[i][col] == num)

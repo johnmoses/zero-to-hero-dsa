@@ -2,7 +2,7 @@
 
 import java.util.HashMap;
 
-public class HashingIntro {
+class HashingIntro {
 
     public static void main(String[] args) {
         HashMap<String, Integer> hashMap = new HashMap<>();

@@ -1,6 +1,6 @@
 // Application Examples - Java
 
-public class ApplicationExamples {
+class ApplicationExamples {
 
     public static int countInRange(int[] prefix, int left, int right) {
         if (left == 0) {
@@ -22,7 +22,7 @@ public class ApplicationExamples {
         }
 
         int[] prefixFreq = new int[freq.length];
-        prefixFreq[0] = freq;
+        prefixFreq[0] = freq[0];
         for (int i = 1; i < freq.length; i++) {
             prefixFreq[i] = prefixFreq[i - 1] + freq[i];
         }

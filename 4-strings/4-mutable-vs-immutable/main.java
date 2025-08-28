@@ -1,6 +1,6 @@
 // Mutable vs Immutable Strings - Java Example
 
-public class MutableVsImmutable {
+class MutableVsImmutable {
     public static void main(String[] args) {
         String text = "hello";
         System.out.println("Original text: " + text);

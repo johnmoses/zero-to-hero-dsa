@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class DFSGraph {
+class DFSGraph {
     public static void dfs(Map<String, List<String>> graph, String node, Set<String> visited) {
         visited.add(node);
         System.out.print(node + " ");

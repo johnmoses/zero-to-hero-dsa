@@ -1,7 +1,7 @@
 // main.java
 // Examples demonstrating Big-O time complexity in Java
 
-public class Main {
+class BigOExamples {
 
     public static int constantTimeExample(int[] arr) {
         // O(1) - Accessing first element

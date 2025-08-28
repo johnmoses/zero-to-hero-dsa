@@ -1,7 +1,7 @@
 // main.java
 // Java examples demonstrating control flow statements.
 
-public class Main {
+class CheckNumber {
 
     public static void checkNumber(int num) {
         if (num > 0) {

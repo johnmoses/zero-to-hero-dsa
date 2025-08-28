@@ -1,6 +1,6 @@
 // Classic Divide and Conquer - Java example
 
-public class Main {
+class Main {
     public static int binarySearch(int[] arr, int target) {
         int left = 0, right = arr.length - 1;
         while (left <= right) {

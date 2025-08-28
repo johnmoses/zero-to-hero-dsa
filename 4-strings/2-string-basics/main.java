@@ -1,6 +1,6 @@
 // String Basics - Java Example
 
-public class StringBasics {
+class StringBasics {
 
     public static void main(String[] args) {
         String text = "hello";

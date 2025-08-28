@@ -1,7 +1,7 @@
 // main.java
 // Java examples for variables and data types.
 
-public class Main {
+class Variables {
 
     public static void main(String[] args) {
         int age = 25;

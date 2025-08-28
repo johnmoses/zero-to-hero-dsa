@@ -2,7 +2,7 @@
 
 import java.util.PriorityQueue;
 
-public class TopKElements {
+class TopKElements {
 
     public static int[] findTopKElements(int[] arr, int k) {
         if (k <= 0) return new int[0];

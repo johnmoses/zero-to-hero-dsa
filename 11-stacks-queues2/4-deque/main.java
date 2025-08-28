@@ -3,7 +3,7 @@
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class DequeExample {
+class DequeExample {
 
     public static void main(String[] args) {
         Deque<Integer> dq = new ArrayDeque<>();

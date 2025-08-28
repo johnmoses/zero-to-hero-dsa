@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class CycleDetection {
+class CycleDetection {
 
     private static boolean isCyclicUtil(Map<Integer, List<Integer>> graph, int v,
         Set<Integer> visited, Set<Integer> recStack) {

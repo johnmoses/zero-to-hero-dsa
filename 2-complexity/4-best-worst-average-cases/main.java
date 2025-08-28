@@ -1,6 +1,6 @@
 // Best, Worst, and Average Case - Java Example
 
-public class BestWorstAverage {
+class BestWorstAverage {
 
     public static int linearSearch(int[] arr, int target) {
         for (int i = 0; i < arr.length; i++) {

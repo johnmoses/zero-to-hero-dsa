@@ -9,7 +9,7 @@ class DNode {
     }
 }
 
-public class DoublyLinkedList {
+class DoublyLinkedList {
     DNode head;
 
     public void insertAtHead(int data) {

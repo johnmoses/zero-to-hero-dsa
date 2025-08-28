@@ -1,6 +1,6 @@
 // Search Problem Examples - Java Example
 
-public class SearchProblems {
+class SearchProblems {
 
     public static int countOnes(int[] arr) {
         int low = 0, high = arr.length - 1;

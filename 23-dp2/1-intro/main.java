@@ -1,6 +1,6 @@
 // Advanced DP Intro - Java example
 
-public class Main {
+class Main {
     public static int longestPalindromicSubseq(String s) {
         int n = s.length();
         int[][] dp = new int[n][n];

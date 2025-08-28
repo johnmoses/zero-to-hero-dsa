@@ -2,7 +2,7 @@
 
 import java.util.Stack;
 
-public class ExpressionEvaluation {
+class ExpressionEvaluation {
 
     public static int evaluatePostfix(String expr) {
         Stack<Integer> stack = new Stack<>();

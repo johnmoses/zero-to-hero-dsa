@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class ConnectedComponents {
+class ConnectedComponents {
 
     public static void dfs(Map<Integer, List<Integer>> graph, int node, Set<Integer> visited, List<Integer> component) {
         visited.add(node);

@@ -29,7 +29,7 @@ class Trie {
     }
 }
 
-public class TrieStructure {
+class TrieStructure {
     public static void main(String[] args) {
         Trie trie = new Trie();
         trie.insert("apple");

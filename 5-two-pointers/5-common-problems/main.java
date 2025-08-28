@@ -1,6 +1,6 @@
 // Common Two Pointers Problems - Java Example
 
-public class CommonTwoPointersProblems {
+class CommonTwoPointersProblems {
 
     public static int maxArea(int[] height) {
         int left = 0, right = height.length - 1;

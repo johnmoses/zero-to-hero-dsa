@@ -1,5 +1,3 @@
-# Problem Applications - Python Example
-
 def largest_rectangle_area(heights):
     stack = []
     max_area = 0

@@ -14,7 +14,7 @@ class Student {
     }
 }
 
-public class CustomComparator {
+class CustomComparator {
     public static void main(String[] args) {
         List<Student> students = Arrays.asList(
             new Student("Alice", 85),

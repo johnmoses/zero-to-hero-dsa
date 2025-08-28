@@ -1,6 +1,6 @@
 // DP Optimization - Java example (Space Optimized Fibonacci)
 
-public class Main {
+class Main {
     public static int fib(int n) {
         if (n <= 1) return n;
         int prev = 0, curr = 1;

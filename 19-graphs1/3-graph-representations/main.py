@@ -16,5 +16,5 @@ adj_list = {
     3: [2]
 }
 
-print("Edge between 0 and 2 (matrix):", adj_matrix[11])
-print("Neighbors of 2 (list):", adj_list[11])
+print("Edge between 0 and 2 (matrix):", adj_matrix[1])
+print("Neighbors of 2 (list):", adj_list[1])

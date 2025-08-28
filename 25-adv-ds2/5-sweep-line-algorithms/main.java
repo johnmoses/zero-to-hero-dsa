@@ -2,20 +2,20 @@
 
 import java.util.*;
 
-public class Main {
+class Main {
     public static int countOverlaps(List<int[]> intervals) {
         List<int[]> events = new ArrayList<>();
         for (int[] interval : intervals) {
             events.add(new int[] {interval[0], 1});   // Interval start
-            events.add(new int[] {interval, -1});  // Interval end
+            events.add(new int[] {interval[1], -1});  // Interval end
         }
 
-        events.sort(Comparator.comparingInt(a -> a));
+        events.sort(Comparator.comparingInt(a -> a[0]));
 
         int active = 0, maxOverlaps = 0;
 
         for (int[] event : events) {
-            active += event;
+            active += event[1];
             maxOverlaps = Math.max(maxOverlaps, active);
         }
 

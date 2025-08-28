@@ -18,7 +18,7 @@ class CDNode {
     }
 }
 
-public class AdvancedLinkedListsIntro {
+class AdvancedLinkedListsIntro {
     public static void main(String[] args) {
         // Doubly linked list
         DNode node1 = new DNode(1);

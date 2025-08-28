@@ -1,6 +1,6 @@
 // Difference Arrays - Java Example
 
-public class DifferenceArrays {
+class DifferenceArrays {
 
     public static void updateRange(int[] diff, int l, int r, int val) {
         diff[l] += val;

@@ -1,6 +1,6 @@
 // Hash Function - Java Example
 
-public class HashFunction {
+class HashFunction {
 
     public static int simpleHash(int key, int size) {
         return key % size;

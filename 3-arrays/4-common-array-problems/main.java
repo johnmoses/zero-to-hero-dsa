@@ -2,7 +2,7 @@
 
 import java.util.Arrays;
 
-public class CommonArrayProblems {
+class CommonArrayProblems {
 
     public static void main(String[] args) {
         int[] arr = {1, 3, 2, 8, 5};

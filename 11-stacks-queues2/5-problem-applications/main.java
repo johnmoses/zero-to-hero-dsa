@@ -2,7 +2,7 @@
 
 import java.util.Stack;
 
-public class ProblemApplications {
+class ProblemApplications {
 
     public static int largestRectangleArea(int[] heights) {
         Stack<Integer> stack = new Stack<>();

@@ -1,7 +1,7 @@
 // main.java
 // Java example code demonstrating basic programming concepts.
 
-public class Main {
+class HelloWorld {
     
     // Method to print Hello World
     public static void helloWorld() {

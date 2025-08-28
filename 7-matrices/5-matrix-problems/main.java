@@ -1,6 +1,6 @@
 // Matrix Problems - Java Example
 
-public class MatrixProblems {
+class MatrixProblems {
 
     public static void rotateMatrix90(int[][] matrix) {
         int n = matrix.length;

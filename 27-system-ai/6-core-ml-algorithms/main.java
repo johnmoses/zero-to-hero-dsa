@@ -1,6 +1,6 @@
 // Core ML Algorithms - Java example (Simple Linear Regression)
 
-public class Main {
+class Main {
     static class LinearRegression {
         double coeff = 0;
         double intercept = 0;

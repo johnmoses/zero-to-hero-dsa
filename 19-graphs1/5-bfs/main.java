@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class BFSGraph {
+class BFSGraph {
     public static void bfs(Map<String, List<String>> graph, String start) {
         Set<String> visited = new HashSet<>();
         Queue<String> queue = new LinkedList<>();

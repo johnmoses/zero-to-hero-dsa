@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MonotonicQueue {
+class MonotonicQueue {
 
     public static List<Integer> maxSlidingWindow(int[] nums, int k) {
         Deque<Integer> dq = new LinkedList<>();

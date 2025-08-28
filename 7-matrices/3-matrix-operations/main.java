@@ -1,6 +1,6 @@
 // Matrix Operations - Java Example
 
-public class MatrixOperations {
+class MatrixOperations {
 
     public static int[][] addMatrices(int[][] A, int[][] B) {
         int n = A.length, m = A[0].length;

@@ -4,7 +4,7 @@ import java.util.Stack;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class StacksQueuesIntro {
+class StacksQueuesIntro {
     public static void main(String[] args) {
         Stack<Integer> stack = new Stack<>();
         stack.push(1);

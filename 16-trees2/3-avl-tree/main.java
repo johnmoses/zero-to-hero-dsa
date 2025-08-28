@@ -9,7 +9,7 @@ class AVLNode {
     }
 }
 
-public class AVLTree {
+class AVLTree {
 
     int height(AVLNode N) {
         return (N == null) ? 0 : N.height;

@@ -9,7 +9,7 @@ class TreeNode {
     }
 }
 
-public class TreeRotations {
+class TreeRotations {
 
     public static TreeNode leftRotate(TreeNode x) {
         TreeNode y = x.right;

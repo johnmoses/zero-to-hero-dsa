@@ -46,7 +46,7 @@ class HashMap {
     }
 }
 
-public class CollisionResolution {
+class CollisionResolution {
     public static void main(String[] args) {
         HashMap hmap = new HashMap(10);
         hmap.insert("apple", 3);

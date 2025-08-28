@@ -3,7 +3,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+class Main {
     public static int[] computeLPS(String pattern) {
         int[] lps = new int[pattern.length()];
         int length = 0;

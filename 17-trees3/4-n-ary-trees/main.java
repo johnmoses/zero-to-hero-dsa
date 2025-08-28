@@ -12,7 +12,7 @@ class NaryTreeNode {
     }
 }
 
-public class NaryTreeTraversal {
+class NaryTreeTraversal {
     public static void levelOrder(NaryTreeNode root) {
         if (root == null) return;
         Queue<NaryTreeNode> queue = new LinkedList<>();

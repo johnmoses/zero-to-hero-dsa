@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CommonHashProblems {
+class CommonHashProblems {
 
     // Anagram check
     public static boolean areAnagrams(String s1, String s2) {

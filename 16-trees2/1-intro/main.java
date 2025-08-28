@@ -9,7 +9,7 @@ class BSTNode {
     }
 }
 
-public class BSTIntro {
+class BSTIntro {
     public static BSTNode insert(BSTNode root, int key) {
         if (root == null) return new BSTNode(key);
         if (key < root.data)

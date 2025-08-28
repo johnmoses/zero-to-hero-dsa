@@ -2,7 +2,7 @@
 
 import java.util.Arrays;
 
-public class SortingIntro {
+class SortingIntro {
     public static void main(String[] args) {
         int[] arr = {5, 3, 8, 4, 2};
         int[] sortedArr = arr.clone();

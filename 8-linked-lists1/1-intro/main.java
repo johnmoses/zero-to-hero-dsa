@@ -9,7 +9,7 @@ class Node {
     }
 }
 
-public class LinkedListIntro {
+class LinkedListIntro {
     public static void main(String[] args) {
         Node node1 = new Node(1);
         Node node2 = new Node(2);

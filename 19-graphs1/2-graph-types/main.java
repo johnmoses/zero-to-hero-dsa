@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class GraphTypes {
+class GraphTypes {
     public static void main(String[] args) {
         Map<String, List<String>> directedGraph = new HashMap<>();
         directedGraph.put("A", Arrays.asList("B"));

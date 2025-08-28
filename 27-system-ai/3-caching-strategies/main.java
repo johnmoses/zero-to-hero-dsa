@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class Main {
+class Main {
     static class LRUCache {
         private final int capacity;
         private final LinkedHashMap<Integer, Integer> cache;

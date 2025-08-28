@@ -1,6 +1,6 @@
 // Search in Rotated Sorted Array - Java Example
 
-public class SearchInRotatedArrays {
+class SearchInRotatedArrays {
     public static int searchRotated(int[] arr, int target) {
         int low = 0, high = arr.length - 1;
         while (low <= high) {

@@ -2,7 +2,7 @@
 
 import java.sql.*;
 
-public class Main {
+class Main {
     public static void main(String[] args) {
         String url = "jdbc:sqlite::memory:";
 

@@ -9,7 +9,7 @@ class DNode {
     }
 }
 
-public class ComplexManipulations {
+class ComplexManipulations {
 
     public static DNode reverseDoublyLinkedList(DNode head) {
         DNode current = head;

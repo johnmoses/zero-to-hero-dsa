@@ -4,7 +4,7 @@
 
 int main() {
     int arr_1d[] = {1, 2, 3};
-    int arr_2d[2] = {{1, 2}, {3, 4}};
+    int arr_2d[2][2] = {{1, 2}, {3, 4}};
 
     std::cout << "1D array: ";
     for (int i = 0; i < 3; i++) {

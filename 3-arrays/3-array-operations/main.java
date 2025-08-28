@@ -2,7 +2,7 @@
 
 import java.util.ArrayList;
 
-public class ArrayOperations {
+class ArrayOperations {
 
     public static void main(String[] args) {
         ArrayList<Integer> arr = new ArrayList<>();

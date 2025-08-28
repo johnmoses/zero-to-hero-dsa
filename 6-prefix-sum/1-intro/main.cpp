@@ -5,7 +5,7 @@
 
 std::vector<int> prefixSum(const std::vector<int>& arr) {
     std::vector<int> prefix(arr.size());
-    prefix[0] = arr;
+    prefix[0] = arr[0];
     for (size_t i = 1; i < arr.size(); i++) {
         prefix[i] = prefix[i - 1] + arr[i];
     }
@@ -20,7 +20,7 @@ int main() {
     for (int val : prefix) std::cout << val << " ";
     std::cout << std::endl;
 
-    int result = prefix[3] - prefix;
+    int result = prefix[3] - prefix[0];
     std::cout << "Sum from index 1 to 3: " << result << std::endl;
     return 0;
 }

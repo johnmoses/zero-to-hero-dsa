@@ -1,6 +1,6 @@
 // Fenwick Trees - Java example
 
-public class Main {
+class Main {
     static class FenwickTree {
         int[] tree;
         int size;

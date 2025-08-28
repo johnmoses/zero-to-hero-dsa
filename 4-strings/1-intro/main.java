@@ -1,6 +1,6 @@
 // Strings - Java Example
 
-public class StringsIntro {
+class StringsIntro {
 
     public static void main(String[] args) {
         String text = "Hello, World!";

@@ -9,7 +9,7 @@ class Node {
     }
 }
 
-public class FastSlowPointers {
+class FastSlowPointers {
 
     public static boolean hasCycle(Node head) {
         Node slow = head, fast = head;

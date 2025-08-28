@@ -1,6 +1,6 @@
 // AI Math Fundamentals - Java example (Matrix multiplication)
 
-public class Main {
+class Main {
     public static int[][] matMul(int[][] A, int[][] B) {
         int n = A.length;
         int m = B[0].length;

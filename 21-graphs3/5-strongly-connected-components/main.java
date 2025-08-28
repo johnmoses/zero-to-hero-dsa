@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class KosarajuSCC {
+class KosarajuSCC {
 
     public static void dfs(Map<Integer, List<Integer>> graph, int v, Set<Integer> visited, Stack<Integer> stack) {
         visited.add(v);

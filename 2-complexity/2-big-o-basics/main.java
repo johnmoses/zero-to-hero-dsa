@@ -1,6 +1,6 @@
 // Big O Basics - Java Example
 
-public class BigOBasics {
+class BigOBasics {
 
     public static int constantTime(int[] items) {
         return items[0];  // O(1)

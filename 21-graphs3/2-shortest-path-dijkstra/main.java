@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class DijkstraAlgorithm {
+class DijkstraAlgorithm {
 
     public static Map<Character, Integer> dijkstra(Map<Character, List<Pair>> graph, char start) {
         Map<Character, Integer> distances = new HashMap<>();

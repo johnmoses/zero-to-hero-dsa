@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class BellmanFord {
+class BellmanFord {
 
     public static void bellmanFord(int V, int[][] edges, int src) {
         int[] dist = new int[V];
@@ -11,7 +11,7 @@ public class BellmanFord {
 
         for (int i = 0; i < V - 1; i++) {
             for (int[] edge : edges) {
-                int u = edge[0], v = edge, w = edge;
+                int u = edge[0], v = edge[1], w = edge[2];
                 if (dist[u] != Integer.MAX_VALUE && dist[u] + w < dist[v]) {
                     dist[v] = dist[u] + w;
                 }
@@ -20,7 +20,7 @@ public class BellmanFord {
 
         // Check for negative weight cycle
         for (int[] edge : edges) {
-            int u = edge[0], v = edge, w = edge;
+            int u = edge[0], v = edge[1], w = edge[2];
             if (dist[u] != Integer.MAX_VALUE && dist[u] + w < dist[v]) {
                 System.out.println("Graph contains negative weight cycle");
                 return;

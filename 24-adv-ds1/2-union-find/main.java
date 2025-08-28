@@ -1,6 +1,6 @@
 // Union Find - Java example
 
-public class Main {
+class Main {
     static class UnionFind {
         int[] parent, rank;
         public UnionFind(int size) {

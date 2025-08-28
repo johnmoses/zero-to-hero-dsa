@@ -1,6 +1,6 @@
 // Two Pointers Technique - Java Example
 
-public class TwoPointersTechnique {
+class TwoPointersTechnique {
 
     public static int removeDuplicates(int[] arr) {
         if (arr.length == 0) return 0;

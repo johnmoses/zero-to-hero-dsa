@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class Main {
+class Main {
     public static List<int[]> mergeIntervals(List<int[]> intervals) {
         if (intervals.isEmpty()) return Collections.emptyList();
 
@@ -14,8 +14,8 @@ public class Main {
             int[] last = merged.get(merged.size() - 1);
             int[] current = intervals.get(i);
 
-            if (current[0] <= last) {
-                last = Math.max(last, current);
+            if (current[0] <= last[1]) {
+                last[1] = Math.max(last[1], current[1]);
             } else {
                 merged.add(current);
             }
@@ -32,7 +32,7 @@ public class Main {
 
         List<int[]> merged = mergeIntervals(intervals);
         for (int[] interval : merged) {
-            System.out.print("(" + interval[0] + ", " + interval + ") ");
+            System.out.print("(" + interval[0] + ", " + interval[1] + ") ");
         }
         // Output: (1, 6) (8, 10) (15, 18)
     }

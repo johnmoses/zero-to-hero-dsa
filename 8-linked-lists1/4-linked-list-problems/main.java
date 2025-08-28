@@ -9,7 +9,7 @@ class Node {
     }
 }
 
-public class LinkedListProblems {
+class LinkedListProblems {
 
     public static Node reverseList(Node head) {
         Node prev = null;

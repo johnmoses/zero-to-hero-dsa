@@ -1,6 +1,6 @@
 // Searching Introduction - Java Example
 
-public class SearchingIntro {
+class SearchingIntro {
 
     public static int linearSearch(int[] arr, int target) {
         for(int i=0; i < arr.length; i++) {

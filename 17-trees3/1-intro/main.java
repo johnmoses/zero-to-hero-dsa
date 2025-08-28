@@ -16,7 +16,7 @@ class NaryTreeNode {
     }
 }
 
-public class Trees3Intro {
+class Trees3Intro {
     public static void main(String[] args) {
         TrieNode trieRoot = new TrieNode();
         NaryTreeNode naryRoot = new NaryTreeNode(1);

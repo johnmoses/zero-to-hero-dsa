@@ -16,7 +16,7 @@ int main() {
     for (int num : arr) freq[num]++;
 
     std::vector<int> prefixFreq(freq.size(), 0);
-    prefixFreq[0] = freq;
+    prefixFreq[0] = freq[0];
     for (size_t i = 1; i < freq.size(); i++) {
         prefixFreq[i] = prefixFreq[i - 1] + freq[i];
     }

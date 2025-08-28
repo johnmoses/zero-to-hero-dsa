@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class PrimMST {
+class PrimMST {
 
     static class Edge {
         int to, weight;

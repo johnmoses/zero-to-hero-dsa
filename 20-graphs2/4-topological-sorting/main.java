@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class TopologicalSort {
+class TopologicalSort {
 
     private static void topologicalSortUtil(int v, List<List<Integer>> adj, boolean[] visited, Stack<Integer> stack) {
         visited[v] = true;

@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class Main {
+class Main {
     public static void mergeSort(int[] arr, int left, int right) {
         if (left >= right) return;
         int mid = left + (right - left) / 2;

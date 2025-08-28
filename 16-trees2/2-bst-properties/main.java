@@ -9,7 +9,7 @@ class BSTNode {
     }
 }
 
-public class BSTProperties {
+class BSTProperties {
 
     public static boolean isBST(BSTNode root, int minVal, int maxVal) {
         if (root == null) return true;

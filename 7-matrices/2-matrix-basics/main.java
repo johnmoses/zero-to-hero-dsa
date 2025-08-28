@@ -1,6 +1,6 @@
 // Matrix Basics - Java Example
 
-public class MatrixBasics {
+class MatrixBasics {
 
     public static int[][] identityMatrix(int n) {
         int[][] matrix = new int[n][n];

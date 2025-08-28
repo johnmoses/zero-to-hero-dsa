@@ -1,6 +1,6 @@
 // System Design Basics - Java example (Simulated Load Balancer)
 
-public class Main {
+class Main {
     static class LoadBalancer {
         private String[] servers;
         private int index = 0;

@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class BipartiteCheck {
+class BipartiteCheck {
 
     public static boolean isBipartite(List<List<Integer>> graph) {
         int n = graph.size();

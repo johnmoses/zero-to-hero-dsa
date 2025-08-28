@@ -1,6 +1,6 @@
 // String Searching - Java Example
 
-public class StringSearching {
+class StringSearching {
 
     public static void main(String[] args) {
         String text = "Hello, world!";

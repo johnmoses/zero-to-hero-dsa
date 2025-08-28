@@ -1,6 +1,6 @@
 // Advanced Data Structures 1 - Intro Java example
 
-public class Main {
+class Main {
     static class UnionFind {
         int[] parent, rank;
         public UnionFind(int size) {

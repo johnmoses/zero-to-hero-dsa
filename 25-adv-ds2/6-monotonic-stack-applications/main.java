@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class Main {
+class Main {
     public static int[] nextGreaterElements(int[] nums) {
         int[] result = new int[nums.length];
         Arrays.fill(result, -1);

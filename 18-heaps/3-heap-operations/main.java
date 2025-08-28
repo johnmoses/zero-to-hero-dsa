@@ -2,7 +2,7 @@
 
 import java.util.ArrayList;
 
-public class HeapOperations {
+class HeapOperations {
 
     public static void heapify(ArrayList<Integer> arr, int n, int i) {
         int largest = i;

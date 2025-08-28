@@ -2,7 +2,7 @@
 
 import java.util.Arrays;
 
-public class MergeSort {
+class MergeSort {
 
     public static int[] mergeSort(int[] arr) {
         if (arr.length <= 1) return arr;

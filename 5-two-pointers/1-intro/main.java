@@ -1,6 +1,6 @@
 // Two Pointers - Java Example
 
-public class TwoPointersIntro {
+class TwoPointersIntro {
 
     public static int[] twoSumSorted(int[] arr, int target) {
         int left = 0, right = arr.length - 1;

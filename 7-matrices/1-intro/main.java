@@ -1,6 +1,6 @@
 // Matrices - Java Example
 
-public class MatricesIntro {
+class MatricesIntro {
 
     public static void main(String[] args) {
         int[][] matrix = {

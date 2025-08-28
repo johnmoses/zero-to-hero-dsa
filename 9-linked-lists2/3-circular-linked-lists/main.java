@@ -9,7 +9,7 @@ class Node {
     }
 }
 
-public class CircularLinkedList {
+class CircularLinkedList {
     Node head;
 
     public void append(int data) {

@@ -3,7 +3,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class TimeSpaceComplexity {
+class TimeSpaceComplexity {
 
     public static int sumList(List<Integer> items) {
         int total = 0; // O(1) space

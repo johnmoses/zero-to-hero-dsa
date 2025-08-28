@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class Main {
+class Main {
     public static double cosineSimilarity(double[] v1, double[] v2) {
         double dot = 0, norm1 = 0, norm2 = 0;
         for (int i = 0; i < v1.length; i++) {
@@ -24,13 +24,13 @@ public class Main {
                 sims.add(new double[]{i, sim});
             }
         }
-        sims.sort((a, b) -> Double.compare(b[1], a));
+        sims.sort((a, b) -> Double.compare(b[1], a[1]));
 
         double[] weightedRatings = new double[ratings.length];
         double totalSim = 0;
         for (int i = 0; i < Math.min(topN, sims.size()); i++) {
             int idx = (int) sims.get(i)[0];
-            double sim = sims.get(i);
+            double sim = sims.get(i)[1];
             for (int j = 0; j < ratings.length; j++) {
                 weightedRatings[j] += sim * ratings[idx][j];
             }
@@ -47,7 +47,7 @@ public class Main {
                 recommendations.add(new int[]{i, (int)(weightedRatings[i] * 1000)}); // scaled score
             }
         }
-        recommendations.sort((a, b) -> Integer.compare(b[1], a));
+        recommendations.sort((a, b) -> Integer.compare(b[1], a[1]));
         return recommendations;
     }
 

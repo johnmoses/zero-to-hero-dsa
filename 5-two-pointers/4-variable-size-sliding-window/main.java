@@ -1,6 +1,6 @@
 // Variable Size Sliding Window - Java Example
 
-public class VariableSizeSlidingWindow {
+class VariableSizeSlidingWindow {
 
     public static int minSubarrayLen(int target, int[] arr) {
         int start = 0, currSum = 0, minLen = Integer.MAX_VALUE;

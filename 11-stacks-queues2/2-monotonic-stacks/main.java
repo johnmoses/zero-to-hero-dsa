@@ -2,7 +2,7 @@
 
 import java.util.Stack;
 
-public class MonotonicStack {
+class MonotonicStack {
 
     public static int[] nextGreaterElements(int[] arr) {
         int[] result = new int[arr.length];

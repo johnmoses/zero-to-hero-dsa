@@ -1,6 +1,6 @@
 // Binary Search - Java Example
 
-public class BinarySearch {
+class BinarySearch {
     public static int binarySearch(int[] arr, int target) {
         int low = 0, high = arr.length - 1;
         while(low <= high) {

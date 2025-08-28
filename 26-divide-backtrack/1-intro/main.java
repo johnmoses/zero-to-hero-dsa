@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class Main {
+class Main {
     // Merge function for merge sort
     public static List<Integer> merge(List<Integer> left, List<Integer> right) {
         List<Integer> result = new ArrayList<>();

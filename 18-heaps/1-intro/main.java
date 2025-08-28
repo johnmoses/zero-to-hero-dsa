@@ -2,7 +2,7 @@
 
 import java.util.PriorityQueue;
 
-public class HeapIntro {
+class HeapIntro {
     public static void main(String[] args) {
         PriorityQueue<Integer> minHeap = new PriorityQueue<>();
         minHeap.add(5);

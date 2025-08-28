@@ -10,7 +10,7 @@ class TreeNode {
     }
 }
 
-public class TreeSerialization {
+class TreeSerialization {
 
     // Serializes a tree to a single string.
     public String serialize(TreeNode root) {

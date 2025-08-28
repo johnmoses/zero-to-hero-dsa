@@ -1,6 +1,6 @@
 // Segment Trees - Java example (Range Sum Query)
 
-public class Main {
+class Main {
     static class SegmentTree {
         int[] tree;
         int n;

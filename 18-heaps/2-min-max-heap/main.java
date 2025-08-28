@@ -3,7 +3,7 @@
 import java.util.Collections;
 import java.util.PriorityQueue;
 
-public class MinMaxHeapDemo {
+class MinMaxHeapDemo {
     public static void main(String[] args) {
         PriorityQueue<Integer> minHeap = new PriorityQueue<>();
         PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());

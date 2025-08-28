@@ -3,7 +3,7 @@
 
 import java.util.HashMap;
 
-public class Main {
+class Main {
     static HashMap<Integer, Integer> memo = new HashMap<>();
     
     public static int fib(int n) {
