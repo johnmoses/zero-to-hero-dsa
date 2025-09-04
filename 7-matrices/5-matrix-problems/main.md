@@ -15,6 +15,14 @@ Solving these problems develops deeper understanding of matrix manipulation.
 
 ## Examples
 Rotating a square matrix in-place.
+You are given an n x n 2D mat representing an image.
+
+Rotate the image by 90 degrees (clockwise).
+
+mat = [[1,2,3],[4,5,6],[7,8,9]]
+
+Follow up:
+Could you do this in-place?
 
 ## Key Concepts
 - Use traversal strategies.  

@@ -30,9 +30,20 @@ def insert(heap, val):
 def extract_max(heap):
     if not heap:
         return None
+    
     max_val = heap[0]
-    heap = heap.pop()
+    
+    # If this is the last element
+    if len(heap) == 1:
+        heap.pop()
+        return max_val
+    
+    # Replace root with last element
+    heap[0] = heap.pop()
+    
+    # Heapify the root
     heapify(heap, len(heap), 0)
+        
     return max_val
 
 # Usage example

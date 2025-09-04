@@ -21,5 +21,14 @@ A 2D array can represent a matrix:
 - Multi-dimensional arrays extend to higher dimensions.  
 - Dynamic arrays provide flexible sizing.
 
+## One-dimensional arrays
+One-dimensional arrays are linear collections of elements, accessible via a single index. They are ideal for simple lists of items.
+
+## Multi-dimensional arrays
+Multi-dimensional arrays extend the concept of one-dimensional arrays to multiple dimensions, allowing representation of complex data structures.
+
+## Dynamic arrays
+Dynamic arrays can grow or shrink in size as needed, providing flexibility in scenarios where the number of elements is not known in advance.
+
 ## Summary
 Understanding array types expands your ability to model data in various forms.

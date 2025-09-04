@@ -2,7 +2,7 @@
 
 import java.util.HashMap;
 
-class Main {
+class Memoization {
     static HashMap<Integer, Integer> memo = new HashMap<>();
     
     public static int fib(int n) {

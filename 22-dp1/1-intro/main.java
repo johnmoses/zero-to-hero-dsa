@@ -3,7 +3,7 @@
 
 import java.util.HashMap;
 
-class Main {
+class Fibonacci {
     static HashMap<Integer, Integer> memo = new HashMap<>();
     
     public static int fib(int n) {

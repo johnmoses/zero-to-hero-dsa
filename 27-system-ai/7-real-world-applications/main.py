@@ -25,16 +25,25 @@ def recommend(user_idx, ratings, top_n=2):
     similarities.sort(key=lambda x: x[1], reverse=True)
 
     # Aggregate ratings from most similar users
-    weighted_ratings = np.zeros(ratings.shape)
+    # This should be a 1D vector of scores, not a matrix.
+    weighted_scores = np.zeros(ratings.shape[1])
     total_sim = 0
     for i, sim in similarities[:top_n]:
-        weighted_ratings += sim * ratings[i]
-        total_sim += sim
-    weighted_ratings /= total_sim if total_sim else 1
+        # Ensure similarity is positive before weighting
+        if sim > 0:
+            weighted_scores += sim * ratings[i]
+            total_sim += sim
+    
+    if total_sim > 0:
+        weighted_scores /= total_sim
 
     # Recommend items not yet rated by user
     user_ratings = ratings[user_idx]
-    recommendations = [(idx, score) for idx, score in enumerate(weighted_ratings) if user_ratings[idx] == 0]
+    recommendations = []
+    for idx, score in enumerate(weighted_scores):
+        if user_ratings[idx] == 0 and score > 0:
+            recommendations.append((idx, score))
+            
     recommendations.sort(key=lambda x: x[1], reverse=True)
     return recommendations
 

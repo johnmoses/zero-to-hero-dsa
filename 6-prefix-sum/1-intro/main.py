@@ -9,7 +9,7 @@ def prefix_sum(arr):
 
 arr = [1, 2, 3, 4]
 prefix = prefix_sum(arr)
-print("Prefix sum array:", prefix)
+# print("Prefix sum array:", prefix)
 # Sum of range 1 to 3:
 result = prefix[3] - prefix
-print("Sum from index 1 to 3:", result)
+# print("Sum from index 1 to 3:", result)

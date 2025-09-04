@@ -10,7 +10,7 @@ class BSTNode:
 def insert(root, key):
     if root is None:
         return BSTNode(key)
-    if key < root:
+    if key < root.data:  # Fixed: Compare with root.data instead of root
         root.left = insert(root.left, key)
     else:
         root.right = insert(root.right, key)

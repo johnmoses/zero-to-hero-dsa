@@ -1,7 +1,7 @@
 # Introduction to Linked Lists
 
 ## Introduction
-Linked Lists are linear data structures consisting of nodes, where each node contains data and a reference to the next node.
+Linked Lists are linear data structures consisting of nodes, where each node contains data and a reference to the next node. It is an alternative data structure to array-based sequences.
 
 ## Details
 Unlike arrays, linked lists allow dynamic memory allocation and efficient insertion/deletion without shifting elements.

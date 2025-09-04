@@ -10,6 +10,13 @@ It avoids recomputing from scratch by subtracting the element leaving the window
 
 ## Examples
 Finding the maximum sum of any contiguous subarray of size k.
+Example:
+Input: arr = [2, 1, 5, 1, 3, 2], k = 3
+Output: 9
+Explanation:
+1. Calculate the sum of the first 'k' elements to initialize the window.
+2. Slide the window across the array by adding the next element and removing the first element of the previous window.
+3. Keep track of the maximum sum encountered during the sliding process.    
 
 ## Key Concepts
 - Sliding window size stays constant.  

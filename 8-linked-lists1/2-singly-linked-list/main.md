@@ -11,6 +11,21 @@ Each node contains:
 
 Operations include insertion, deletion, and traversal. Efficient for dynamic lists but only traversable in one direction.
 
+Insertion:
+At the Beginning: Create a new node, set its next pointer to the current head, and update the head to point to the new node.
+At the End: Traverse to the last node, set its next pointer to the new node.
+
+- At a Specific Index: Traverse to the node before the desired index, update pointers to insert the new node in between.
+
+Deletion:
+
+- At the Beginning: Update the head to point to the second node.
+- At the End: Traverse to the second-to-last node, update its next pointer to None.
+- At a Specific Index: Traverse to the node before the desired index, update pointers to remove the node at the specified index.
+
+Search:
+Traverse the list, comparing each node's data with the target value until found or the end is reached.
+
 ## Examples
 Inserting a new node at the beginning involves adjusting head reference.
 

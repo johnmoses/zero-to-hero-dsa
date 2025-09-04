@@ -31,5 +31,22 @@ Accessing element at index 2 gives 3.
 - Homogeneous data types.  
 - Efficient for iteration and random access.
 
+## Fixed-size collection of elements
+Arrays have a predetermined size that cannot be changed after creation, which can lead to memory inefficiencies if not managed properly.
+
+## Index-based direct access
+Elements in an array can be accessed directly using their index, allowing for fast retrieval and updates.
+
+## Homogeneous data types
+All elements in an array are of the same data type, ensuring consistency and efficient memory usage.
+
+## Efficient for iteration and random access
+Arrays allow for quick traversal of elements and support random access, making them suitable for scenarios where frequent reads and writes are required.
+
+## In-place operations
+
+- Replace elements
+- Repeated deletions
+
 ## Summary
 Arrays form the backbone of many complex data structures and algorithms due to their simplicity and fast access.

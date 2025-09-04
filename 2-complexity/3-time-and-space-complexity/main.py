@@ -11,3 +11,6 @@ def copy_list(items):
     for item in items:     # O(n) time
         new_list.append(item)
     return new_list
+
+print("Sum of list:", sum_list([1, 2, 3, 4, 5]))  # Output: 15
+print("Copy of list:", copy_list([1, 2, 3, 4, 5]))  # Output: [1, 2, 3, 4,

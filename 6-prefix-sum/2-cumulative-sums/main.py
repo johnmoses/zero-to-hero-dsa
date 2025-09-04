@@ -9,4 +9,4 @@ def cumulative_count_positive(arr):
 
 arr = [-1, 4, 2, -3, 5]
 count_pos = cumulative_count_positive(arr)
-print("Cumulative count of positives:", count_pos)
+# print("Cumulative count of positives:", count_pos)

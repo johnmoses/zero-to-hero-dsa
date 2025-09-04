@@ -11,6 +11,11 @@ It adapts by moving the end pointer to grow and the start pointer to shrink the 
 ## Examples
 Finding the smallest subarray with a sum greater than or equal to a target.
 
+Example:
+Input: arr = [2,3,1,2,4,3], target = 7
+Output: 2
+Explanation: The subarray [4,3] has the minimal length of 2.
+
 ## Key Concepts
 - Window size adjusts during traversal.  
 - Two pointers maintain window boundaries.  
